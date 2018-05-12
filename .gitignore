@@ -1,3 +1,4 @@
 **/node_modules/
 client/build/
 npm-debug.log*
+sanity/dist/
