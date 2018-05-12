@@ -1,12 +1,12 @@
 export default {
-  name: 'author',
-  title: 'Author',
+  name: 'company',
+  title: 'Company',
   type: 'document',
   fields: [
     {
       name: 'name',
       title: 'Name',
-      type: 'string'
+      type: 'string',
     },
     {
       name: 'slug',
@@ -15,8 +15,8 @@ export default {
       options: {
         source: 'name',
         maxLength: 96,
-        auto: true
-      }
+        auto: true,
+      },
     },
     {
       name: 'image',
@@ -26,24 +26,11 @@ export default {
         hotspot: true
       }
     },
-    {
-      name: 'bio',
-      title: 'Bio',
-      type: 'array',
-      of: [
-        {
-          title: 'Block',
-          type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: []
-        }
-      ]
-    }
   ],
   preview: {
     select: {
       title: 'name',
-      media: 'image'
-    }
+      media: 'image',
+    },
   }
 }
