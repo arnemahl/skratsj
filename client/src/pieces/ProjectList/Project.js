@@ -1,20 +1,64 @@
-import React from 'react';
-import { Table } from './Project.styles.js';
+import React, { Fragment } from 'react';
+import { Table, Nowrap, Tech } from './Project.styles.js';
 
 export default class Project extends React.Component {
   render() {
     const { project } = this.props;
 
+    console.debug(`project.technologies`, project.technologies); // DEBUG
+
     return (
       <Table>
-        <tr>
-          <td>
-            {project.start} - {project.end}
-          </td>
-          <td>
-            <h4>{project.title}</h4>
-          </td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>
+              <Nowrap>{project.start}</Nowrap> - <Nowrap>{project.end || 'nå'}</Nowrap>
+            </td>
+            <td>
+              <h4>{project.title}</h4>
+              {project.company && <h5>for {project.company.name}</h5>}
+            </td>
+          </tr>
+
+          { project.description &&
+            <tr>
+              <td>
+                Prosjektbeskrivelse
+              </td>
+              <td dangerouslySetInnerHTML={{__html: project.description.split('\n').join('<br />')}} />
+            </tr>
+          }
+
+          { (project.role && project.role.title && project.role.description) &&
+            <Fragment>
+              <tr>
+                <td>
+                  Rolle
+                </td>
+                <td>
+                  {project.role.title}
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                </td>
+                <td dangerouslySetInnerHTML={{__html: project.role.description.split('\n').join('<br />')}} />
+              </tr>
+
+              <tr>
+                <td>
+                  Teknologier
+                </td>
+                <td>
+                  {project.role.technologies.map(tech =>
+                    <Tech key={tech}>{tech}</Tech>
+                  )}
+                </td>
+              </tr>
+            </Fragment>
+          }
+        </tbody>
       </Table>
     );
   }

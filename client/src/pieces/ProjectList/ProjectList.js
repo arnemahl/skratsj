@@ -1,5 +1,7 @@
 import React from 'react';
 import { projectListStore, fetchProjects } from './projectListStore';
+
+import { List } from './ProjectList.styles.js';
 import Project from './Project';
 
 export default class ProjectList extends React.Component {
@@ -17,10 +19,9 @@ export default class ProjectList extends React.Component {
 
   render() {
     const { projects = [] } = projectListStore.projectsAsync;
-    console.debug(`render`, projects); // DEBUG
 
     return (
-      <div>
+      <List>
         <h3>Prosjekter</h3>
         {projects.map(project =>
           <Project
@@ -28,7 +29,7 @@ export default class ProjectList extends React.Component {
             project={project}
           />
         )}
-      </div>
+      </List>
     );
   }
 }

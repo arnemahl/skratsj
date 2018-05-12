@@ -15,7 +15,24 @@ export { store as projectListStore };
 
 function apiCall() {
   return client.fetch(
-    `*[_type == 'project']`
+    `*[_type == 'project']{
+      _id,
+      title,
+      slug,
+      company->{
+        name
+      },
+      url,
+      logo,
+      start,
+      end,
+      description,
+      role {
+        title,
+        description,
+        technologies,
+      }
+    }`
   );
 }
 
