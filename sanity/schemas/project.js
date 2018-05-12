@@ -61,7 +61,7 @@ export default {
       fields: [
         {
           name: 'title',
-          name: 'Tittel',
+          title: 'Tittel',
           type: 'string',
         },
         {
@@ -72,7 +72,7 @@ export default {
         },
         {
           name: 'technologies',
-          name: 'Teknologier',
+          title: 'Teknologier',
           type: 'array',
           of: [{type: 'string'}],
           options: {
