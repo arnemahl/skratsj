@@ -7,6 +7,7 @@
     "@sanity/image-url": "^0.128.12",
     "date-fns": "^1.29.0",
     "history": "^4.7.2",
+    "pockito": "^0.1.15",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router": "^4.2.0",
