@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import IntroductoryOverview from './sections/IntroductoryOverview';
+import KeyInformation from './sections/KeyInformation';
 import ProjectList from './sections/ProjectList';
 
 import { Page } from './Person.style.js';
@@ -42,6 +43,7 @@ class Person extends Component {
         return (
           <Page>
             <IntroductoryOverview person={person} />
+            <KeyInformation />
             {/*<ProjectList />*/}
           </Page>
         );
