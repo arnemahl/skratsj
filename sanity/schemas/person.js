@@ -72,12 +72,39 @@ export default {
           type: 'string',
         },
       ],
-    }
+    },
+    {
+      name: 'expertise',
+      title: 'Ekspertise',
+      type: 'array',
+      of: [{
+        name: 'area',
+        title: 'Område',
+        type: 'object',
+        fields: [
+          {
+            name: 'name',
+            title: 'Navn på område',
+            description: 'F.eks. frontend',
+            type: 'string',
+          },
+          {
+            name: 'technologies',
+            title: 'Teknologier',
+            type: 'array',
+            of: [{type: 'string'}],
+            options: {
+              layout: 'tags',
+            },
+          },
+        ],
+      }],
+    },
   ],
   preview: {
     select: {
       title: 'name',
       media: 'image',
     },
-  }
+  },
 }
