@@ -18,7 +18,7 @@ export default class IntroductoryOverview extends React.Component {
     return (
       <Fragment>
         <Section>
-          <ProfileImg src={createUrl(person.image).width(200).height(200)} alt="Person" size="200" />
+          <ProfileImg src={createUrl(person.image).width(180).height(180)} alt="Person" size="180" />
           <Description>
             <Name>{person.name}</Name>
             <Title>{person.title}</Title>

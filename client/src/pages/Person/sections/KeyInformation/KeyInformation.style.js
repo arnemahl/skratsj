@@ -21,5 +21,5 @@ export const Entry = styled.div`
 export const Icon = styled.span`
   width: 33px;
   text-align: center;
-  color: #b57e43;
+  color: var(--main-color);
 `;

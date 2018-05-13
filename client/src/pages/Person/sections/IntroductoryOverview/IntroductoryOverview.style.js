@@ -18,8 +18,8 @@ export const ProfileImg = styled.img`
 
 export const Description = styled.div`
   margin-right: -25px;
-  background-color: #b57e43;
-  color: white;
+  background-color: var(--main-color);
+  color: var(--white);
   padding: 20px;
 `;
 
@@ -31,7 +31,7 @@ export const Name = styled.h1`
 
 export const Title = styled.h2`
   margin: 3px 0 20px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--white);
   font-weight: 300;
   letter-spacing: 0.5px;
 `;

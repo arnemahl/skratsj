@@ -6,11 +6,11 @@ export const Table = styled.table`
     vertical-align: top;
   }
   td:nth-child(1) {
-    width: 150px;
+    width: 180px;
 
     text-align: right;
     padding-right: 20px;
-    color: #b57d43;
+    color: var(--main-color);
   }
 
   h4, h5 {
