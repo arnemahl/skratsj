@@ -10,6 +10,6 @@ export const client = sanityClient({
 
 const builder = imageUrlBuilder(client);
 
-export const urlFor = source => {
+export const createUrl = source => {
   return builder.image(source);
 };
