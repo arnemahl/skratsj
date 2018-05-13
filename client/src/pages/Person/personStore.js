@@ -15,7 +15,43 @@ export { store as personStore };
 
 function apiCall() {
   return client.fetch(
-    `*[_type == 'person' && name == 'Arne Mæhlum'] | [0]`
+    `*[_type == 'person' && name == 'Arne Mæhlum'] | [0] {
+      name,
+      image,
+      title,
+      introduction,
+      keyInfo{
+        location,
+        birthYear,
+        emailAddress,
+        phoneNumber,
+        websiteUrl,
+        linkedInUrl,
+        twitterHandle,
+      },
+      expertise[]{
+        name,
+        technologies,
+      },
+      experience[]->{
+        _id,
+        title,
+        slug,
+        company->{
+          name
+        },
+        url,
+        logo,
+        start,
+        end,
+        description,
+        role {
+          title,
+          description,
+          technologies,
+        }
+      },
+    }`
   );
 }
 
