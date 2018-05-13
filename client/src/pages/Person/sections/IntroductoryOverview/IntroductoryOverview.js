@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
-import { FlexBox } from './Introduction.style.js';
+import { FlexBox } from './IntroductoryOverview.style.js';
 
 import { createUrl } from 'sanity';
 
-export default class Introduction extends React.Component {
+export default class IntroductoryOverview extends React.Component {
 
   render() {
     const { person } = this.props;

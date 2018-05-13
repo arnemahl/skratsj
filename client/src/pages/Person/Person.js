@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Introduction from './pieces/Introduction';
-import ProjectList from './pieces/ProjectList';
+import IntroductoryOverview from './sections/IntroductoryOverview';
+import ProjectList from './sections/ProjectList';
 
 import { personStore, fetchPerson } from './personStore';
 
@@ -23,7 +23,7 @@ class Person extends Component {
     return (
       <div>
         { person &&
-          <Introduction person={person} />
+          <IntroductoryOverview person={person} />
         }
         <ProjectList />
       </div>
