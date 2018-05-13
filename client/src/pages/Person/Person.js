@@ -5,6 +5,7 @@ import ProjectList from './sections/ProjectList';
 import { Page } from './Person.style.js';
 
 import { personStore, fetchPerson } from './personStore';
+import REQ from 'util/REQ';
 
 class Person extends Component {
 
@@ -20,16 +21,31 @@ class Person extends Component {
   }
 
   render() {
-    const { person } = personStore.personAsync;
+    const { person, req } = personStore.personAsync;
 
-    return (
-      <Page>
-        { person &&
-          <IntroductoryOverview person={person} />
-        }
-        <ProjectList />
-      </Page>
-    );
+    switch (req) { // eslint-disable-line default-case
+      case REQ.INIT:
+      case REQ.PENDING:
+        return (
+          <Page>
+            Laster...
+          </Page>
+        );
+      case REQ.ERROR:
+        return (
+          <Page>
+            Noe gikk galt.<br />
+            Prøv å laste siden på nytt.
+          </Page>
+        );
+      case REQ.SUCCESS:
+        return (
+          <Page>
+            <IntroductoryOverview person={person} />
+            {/*<ProjectList />*/}
+          </Page>
+        );
+    }
   }
 }
 
