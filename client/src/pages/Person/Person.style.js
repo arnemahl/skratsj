@@ -5,4 +5,5 @@ export const Page = styled.div`
   margin: auto;
   padding: 25px;
   background-color: white;
+  color: #1e1e1e;
 `;

@@ -10,7 +10,7 @@ export const Table = styled.table`
 
     text-align: right;
     padding-right: 20px;
-    color: #767676;
+    color: #b57d43;
   }
 
   h4, h5 {
