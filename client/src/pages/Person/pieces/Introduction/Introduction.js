@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { FlexBox } from './Introduction.style.js';
 
-import { createUrl } from '../../sanity.js';
+import { createUrl } from 'sanity';
 
 export default class Introduction extends React.Component {
 
@@ -11,7 +11,7 @@ export default class Introduction extends React.Component {
     return (
       <Fragment>
         <FlexBox>
-          <img src={createUrl(person.image)} />
+          <img src={createUrl(person.image)} alt="Person" />
         </FlexBox>
       </Fragment>
     );

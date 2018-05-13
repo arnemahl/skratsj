@@ -1,5 +1,5 @@
 import { Listenable } from 'pockito';
-import { client } from '../../sanity';
+import { client } from 'sanity';
 import REQ from './REQ';
 
 const store = new Listenable({
