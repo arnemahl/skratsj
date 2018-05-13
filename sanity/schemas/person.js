@@ -100,6 +100,15 @@ export default {
         ],
       }],
     },
+    {
+      name: 'experience',
+      title: 'Erfaring',
+      type: 'array',
+      of: [{
+        type: 'reference',
+        to: {type: 'project'},
+      }],
+    },
   ],
   preview: {
     select: {
