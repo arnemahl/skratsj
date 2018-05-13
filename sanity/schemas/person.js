@@ -33,7 +33,7 @@ export default {
       type: 'object',
       fields: [
         {
-          name: 'recidence',
+          name: 'location',
           title: 'Bosted',
           description: 'F.eks. Oslo. Ikke full adresse.',
           type: 'string',
@@ -54,7 +54,7 @@ export default {
           type: 'string',
         },
         {
-          name: 'website',
+          name: 'websiteUrl',
           title: 'Nettside',
           description: 'F.eks. hjemmeside eller blogg',
           type: 'url',
