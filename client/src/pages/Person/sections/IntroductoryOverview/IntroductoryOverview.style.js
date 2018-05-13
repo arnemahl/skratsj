@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Section = styled.div`
-  margin-top: 25px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -14,23 +13,27 @@ export const ProfileImg = styled.img`
   min-height: ${p => p.size}px;
   max-height: ${p => p.size}px;
   margin: 20px;
+  margin-left: 0;
 `;
 
 export const Description = styled.div`
+  margin-right: -25px;
   background-color: #b57e43;
   color: white;
   padding: 20px;
 `;
 
 export const Name = styled.h1`
-  font-weight: 300;
   margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 `;
 
 export const Title = styled.h2`
-  border-bottom: 1px solid white;
   margin: 3px 0 20px;
+  border-bottom: 1px solid white;
   font-weight: 300;
+  letter-spacing: 0.5px;
 `;
 
 export const Introduction = styled.div`

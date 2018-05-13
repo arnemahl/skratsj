@@ -43,7 +43,7 @@ class Person extends Component {
         return (
           <Page>
             <IntroductoryOverview person={person} />
-            <KeyInformation />
+            <KeyInformation person={person} />
             {/*<ProjectList />*/}
           </Page>
         );
