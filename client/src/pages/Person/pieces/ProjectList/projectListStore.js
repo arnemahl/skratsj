@@ -1,6 +1,6 @@
 import { Listenable } from 'pockito';
 import { client } from 'sanity';
-import REQ from './REQ';
+import REQ from 'util/REQ';
 
 const store = new Listenable({
   initialState: {
