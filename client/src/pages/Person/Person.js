@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import IntroductoryOverview from './sections/IntroductoryOverview';
 import ProjectList from './sections/ProjectList';
 
+import { Page } from './Person.style.js';
+
 import { personStore, fetchPerson } from './personStore';
 
 class Person extends Component {
@@ -21,12 +23,12 @@ class Person extends Component {
     const { person } = personStore.personAsync;
 
     return (
-      <div>
+      <Page>
         { person &&
           <IntroductoryOverview person={person} />
         }
         <ProjectList />
-      </div>
+      </Page>
     );
   }
 }

@@ -1,5 +1,12 @@
 import React, { Fragment } from 'react';
-import { FlexBox } from './IntroductoryOverview.style.js';
+import {
+  Section,
+  ProfileImg,
+  Description,
+  Name,
+  Title,
+  Introduction,
+} from './IntroductoryOverview.style.js';
 
 import { createUrl } from 'sanity';
 
@@ -10,9 +17,14 @@ export default class IntroductoryOverview extends React.Component {
 
     return (
       <Fragment>
-        <FlexBox>
-          <img src={createUrl(person.image)} alt="Person" />
-        </FlexBox>
+        <Section>
+          <ProfileImg src={createUrl(person.image).width(200).height(200)} alt="Person" size="200" />
+          <Description>
+            <Name>{person.name}</Name>
+            <Title>{person.title}</Title>
+            <Introduction>{person.introduction}</Introduction>
+          </Description>
+        </Section>
       </Fragment>
     );
   }
