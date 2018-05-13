@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
-import { Table, Nowrap, Tech } from './Project.styles.js';
+import { Table, Nowrap } from './Project.styles.js';
+import TechTag from 'components/TechTag';
 
 export default class Project extends React.Component {
   render() {
@@ -52,7 +53,7 @@ export default class Project extends React.Component {
                 </td>
                 <td>
                   {project.role.technologies.map(tech =>
-                    <Tech key={tech}>{tech}</Tech>
+                    <TechTag key={tech}>{tech}</TechTag>
                   )}
                 </td>
               </tr>
