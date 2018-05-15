@@ -51,6 +51,14 @@ function apiCall() {
           technologies,
         }
       },
+      education[]->{
+        _id,
+        institutionName,
+        degree,
+        description,
+        start,
+        end,
+      },
     }`
   );
 }
