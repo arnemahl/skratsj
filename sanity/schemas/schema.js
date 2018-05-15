@@ -5,8 +5,15 @@ import person from './person';
 import project from './project';
 import company from './company';
 import education from './education';
+import volunteerWorkPosition from './volunteerWorkPosition';
 
 export default createSchema({
     name: 'default',
-    types: schemaTypes.concat([person, project, company, education ])
+    types: schemaTypes.concat([
+      person,
+      project,
+      company,
+      education,
+      volunteerWorkPosition,
+    ])
 })
