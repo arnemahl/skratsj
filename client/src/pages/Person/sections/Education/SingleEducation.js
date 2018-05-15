@@ -1,17 +1,24 @@
 import React from 'react';
-import { Table, Nowrap } from './SingleEducation.style.js';
+import { Table } from './SingleEducation.style.js';
+
+import { format, nbLocale } from 'date-fns';
+const fmt = date => format(date, 'YYYY', { locale: nbLocale });
 
 export default class SingleEducation extends React.Component {
   render() {
     const { singleEducation: edu } = this.props;
 
+    const start = fmt(edu.start);
+    const end = edu.end ? fmt(edu.end) : 'nå';
+
     return (
       <Table>
         <tbody>
           <tr>
-            <td>
-              <Nowrap>{edu.start}</Nowrap> - <Nowrap>{edu.end || 'nå'}</Nowrap>
-            </td>
+            { start === end
+              ? <td>{start}</td>
+              : <td>{start} - {end}</td>
+            }
             <td>
               <h4>{edu.degree}</h4>
               <h5>{edu.institutionName}</h5>

@@ -2,19 +2,24 @@ import React, { Fragment } from 'react';
 import { Table, Nowrap } from './Project.styles.js';
 import TechTag from 'components/TechTag';
 
+import { format, nbLocale } from 'date-fns';
+const fmt = date => format(date, 'MM[.]YYYY', { locale: nbLocale });
+
 export default class Project extends React.Component {
   render() {
     const { project } = this.props;
 
-    console.debug(`project.technologies`, project.technologies); // DEBUG
+    const start = fmt(project.start);
+    const end = project.end ? fmt(project.end) : 'nå';
 
     return (
       <Table>
         <tbody>
           <tr>
-            <td>
-              <Nowrap>{project.start}</Nowrap> - <Nowrap>{project.end || 'nå'}</Nowrap>
-            </td>
+            { start === end
+              ? <td><Nowrap>{start}</Nowrap></td>
+              : <td><Nowrap>{start}</Nowrap> - <Nowrap>{end}</Nowrap></td>
+            }
             <td>
               <h4>{project.title}</h4>
               {project.company && <h5>for {project.company.name}</h5>}
