@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section, Title, TagList } from './Expertise.style.js';
+import { Section, Title, Content } from 'components/Section';
 import TechTag from 'components/TechTag';
 
 const flatten = (arr, next) => arr.concat(next);
@@ -12,7 +12,7 @@ export default class Expertise extends React.Component {
     return (
       <Section>
         <Title>Ekspertise</Title>
-        <TagList>
+        <Content>
           {expertise
             .map(area => area.technologies)
             .reduce(flatten, [])
@@ -21,7 +21,7 @@ export default class Expertise extends React.Component {
               <TechTag solid key={tech}>{tech}</TechTag>
             )
           }
-        </TagList>
+        </Content>
       </Section>
     );
   }

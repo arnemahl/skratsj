@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Section, Title } from './ProjectList.styles.js';
+import { Section, Title } from 'components/Section';
 import Project from './Project';
 
 export default class ProjectList extends React.Component {
