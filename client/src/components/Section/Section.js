@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Section = styled.div``;
+export const Section = styled.div`
+  padding: 0 25px;
+`;
 
 export const Title = styled.h3`
   margin: 20px 5px 8px;

@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Section = styled.div`
-  margin-top: 25px;
+  padding: 25px;
+  padding-bottom: 0;
 
   a {
     color: inherit;
@@ -10,12 +11,16 @@ export const Section = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+  }
 `;
 
 export const Entry = styled.div`
   padding: 7px;
   padding-left: 0;
-  width: 50%;
+  min-width: 50%;
   box-sizing: border-box;
 `;
 export const Icon = styled.span`

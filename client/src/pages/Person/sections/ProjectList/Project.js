@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Table, Nowrap } from 'components/Table';
+import { Table, Nowrap, SmallBr } from 'components/Table';
 import TechTag from 'components/TechTag';
 
 import { format, nbLocale } from 'date-fns';
@@ -43,13 +43,9 @@ export default class Project extends React.Component {
                 </td>
                 <td>
                   {project.role.title}
+                  <SmallBr />
+                  <div dangerouslySetInnerHTML={{__html: project.role.description.split('\n').join('<br />')}} />
                 </td>
-              </tr>
-
-              <tr>
-                <td>
-                </td>
-                <td dangerouslySetInnerHTML={{__html: project.role.description.split('\n').join('<br />')}} />
               </tr>
 
               <tr>

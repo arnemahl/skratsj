@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from 'components/Table';
+import { Table, SmallBr } from 'components/Table';
 
 import { format, nbLocale } from 'date-fns';
 const fmt = date => format(date, 'YYYY', { locale: nbLocale });
@@ -22,11 +22,7 @@ export default class VolunteerWorkPosition extends React.Component {
             <td>
               <h4>{position.position}</h4>
               <h5>{position.organizationName}</h5>
-            </td>
-          </tr>
-          <tr>
-            <td />
-            <td>
+              {position.description && <SmallBr />}
               {position.description}
             </td>
           </tr>

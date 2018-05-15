@@ -6,13 +6,18 @@ const Background = styled.div`
   --main-color: #2d6558;
   --white: #e5e5e5;
 
-  padding: 33px 0;
+  @media (min-width: 1000px) {
+    padding: 33px 100px;
+  }
 `;
 
 const Paper = styled.div`
-  max-width: 800px;
+  @media (min-width: 1000px) {
+    max-width: 800px;
+  }
+
   margin: auto;
-  padding: 25px;
+  padding-bottom: 25px;
   background-color: var(--white);
   color: #1e1e1e;
 `;
