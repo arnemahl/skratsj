@@ -118,6 +118,15 @@ export default {
         to: {type: 'education'},
       }],
     },
+    {
+      name: 'volunteerWorkPositions',
+      title: 'Frivillige verv',
+      type: 'array',
+      of: [{
+        type: 'reference',
+        to: {type: 'volunteerWorkPosition'},
+      }],
+    },
   ],
   preview: {
     select: {
