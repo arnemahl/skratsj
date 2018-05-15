@@ -4,6 +4,7 @@ import KeyInformation from './sections/KeyInformation';
 import Expertise from './sections/Expertise';
 import ProjectList from './sections/ProjectList';
 import Education from './sections/Education';
+import VolunteerWork from './sections/VolunteerWork';
 
 import { Page } from './Person.style.js';
 
@@ -49,6 +50,7 @@ class Person extends Component {
             <Expertise person={person} />
             <ProjectList person={person} />
             <Education person={person} />
+            <VolunteerWork person={person} />
           </Page>
         );
     }

@@ -59,6 +59,15 @@ function apiCall() {
         start,
         end,
       },
+      volunteerWorkPositions[]->{
+        _id,
+        title,
+        organizationName,
+        position,
+        description,
+        start,
+        end,
+      },
     }`
   );
 }
