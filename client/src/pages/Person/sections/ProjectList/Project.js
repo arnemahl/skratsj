@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Table, Nowrap } from './Project.styles.js';
+import { Table, Nowrap } from 'components/Table';
 import TechTag from 'components/TechTag';
 
 import { format, nbLocale } from 'date-fns';

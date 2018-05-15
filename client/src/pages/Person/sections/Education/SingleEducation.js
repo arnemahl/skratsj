@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from './SingleEducation.style.js';
+import { Table } from 'components/Table';
 
 import { format, nbLocale } from 'date-fns';
 const fmt = date => format(date, 'YYYY', { locale: nbLocale });
