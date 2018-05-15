@@ -109,6 +109,15 @@ export default {
         to: {type: 'project'},
       }],
     },
+    {
+      name: 'education',
+      title: 'Utdanning',
+      type: 'array',
+      of: [{
+        type: 'reference',
+        to: {type: 'education'},
+      }],
+    },
   ],
   preview: {
     select: {
