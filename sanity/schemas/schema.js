@@ -4,8 +4,9 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import person from './person';
 import project from './project';
 import company from './company';
+import education from './education';
 
 export default createSchema({
     name: 'default',
-    types: schemaTypes.concat([person, project, company])
+    types: schemaTypes.concat([person, project, company, education ])
 })
