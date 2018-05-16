@@ -7,6 +7,11 @@ export const Table = styled.table`
   td:nth-child(1) {
     color: var(--main-color);
   }
+  @media print {
+    td:nth-child(1) {
+      color: var(--black);
+    }
+  }
 
   @media (max-width: ${small}px) {
     tr, td {
@@ -35,12 +40,42 @@ export const Table = styled.table`
 
       text-align: right;
       padding-right: 20px;
-      color: var(--main-color);
     }
   }
 
   h4, h5 {
     margin: 0;
+  }
+
+  @media print {
+    page-break-inside: avoid;
+
+    tr {
+      display: table-row;
+      padding: initial;
+    }
+    td {
+      display: table-cell;
+      padding: 8px 0;
+    }
+    td:nth-child(1) {
+      padding: 8px 0;
+    }
+
+    padding-top: 8px;
+    &:nth-child(1) {
+      padding-top: 0;
+    }
+
+    td {
+      vertical-align: top;
+    }
+    td:nth-child(1) {
+      width: 160px;
+
+      text-align: right;
+      padding-right: 16px;
+    }
   }
 `;
 

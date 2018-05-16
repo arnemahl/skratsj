@@ -12,6 +12,10 @@ export const Section = styled.div`
   @media (min-width: 768px) {
     padding-top: 25px;
   }
+  @media print {
+    flex-direction: row;
+    background-color: unset;
+  }
 `;
 
 export const ProfileImg = styled.img`
@@ -29,12 +33,22 @@ export const ProfileImg = styled.img`
     margin: 20px;
     margin-left: 30px;
   }
+  @media print {
+    border: none;
+    margin: 20px;
+    margin-left: 0;
+  }
 `;
 
 export const Description = styled.div`
   background-color: var(--main-color);
   color: var(--white);
   padding: 20px;
+
+  @media print {
+    color: var(--black);
+    padding-right: 0;
+  }
 `;
 
 export const Name = styled.h1`
@@ -48,6 +62,10 @@ export const Title = styled.h2`
   border-bottom: 1px solid var(--white);
   font-weight: 300;
   letter-spacing: 0.5px;
+
+  @media print {
+    border-bottom: 1px solid var(--black);
+  }
 `;
 
 export const Introduction = styled.div`

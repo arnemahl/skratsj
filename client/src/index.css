@@ -3,3 +3,8 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+@page {
+  size: 210mm 297mm;
+  margin: 27mm 16mm;
+}

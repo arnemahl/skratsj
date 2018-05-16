@@ -18,6 +18,12 @@ const TechTag = styled.span`
   border: 1px solid var(--main-color);
   padding: 2px 9px;
   `}
+
+  @media print {
+    color: var(--black);
+    border: 1px solid var(--black);
+    padding: 2px 9px;
+  }
 `;
 
 export default TechTag;

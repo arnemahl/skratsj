@@ -5,6 +5,7 @@ const Background = styled.div`
   background-color: #1d1415;
   --main-color: #2d6558;
   --white: #e5e5e5;
+  --black: #1e1e1e;
 
   @media (min-width: 1000px) {
     padding: 33px 100px;
@@ -19,7 +20,7 @@ const Paper = styled.div`
   margin: auto;
   padding-bottom: 25px;
   background-color: var(--white);
-  color: #1e1e1e;
+  color: var(--black);
 `;
 
 export const Page = (props) => (
