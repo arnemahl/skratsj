@@ -21,7 +21,18 @@ export const Table = styled.table`
       padding: 10px 0;
     }
     td:nth-child(1) {
-      padding-bottom: 7px;
+      margin-bottom: 7px;
+    }
+    @media NOT print {
+      tr:nth-child(1) {
+        td:nth-child(1) {
+          border: 1px solid var(--main-color);
+          display: inline-block;
+          padding: 3px 5px 1px;
+          border-radius: 3px;
+          font-style: italic;
+        }
+      }
     }
 
     padding-top: 10px;
