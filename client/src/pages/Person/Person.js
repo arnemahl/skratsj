@@ -48,8 +48,8 @@ class Person extends Component {
             <IntroductoryOverview person={person} />
             <KeyInformation person={person} />
             <Expertise person={person} />
-            <ProjectList person={person} />
             <Education person={person} />
+            <ProjectList person={person} />
             <VolunteerWork person={person} />
           </Page>
         );
