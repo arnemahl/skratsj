@@ -20,7 +20,7 @@ export default {
     },
     {
       name: 'company',
-      title: 'Company',
+      title: 'Selskap',
       type: 'reference',
       to: {type: 'company'},
       weak: true,

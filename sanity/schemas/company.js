@@ -1,11 +1,11 @@
 export default {
   name: 'company',
-  title: 'Company',
+  title: 'Selskap',
   type: 'document',
   fields: [
     {
       name: 'name',
-      title: 'Name',
+      title: 'Navn',
       type: 'string',
     },
     {
@@ -20,7 +20,7 @@ export default {
     },
     {
       name: 'image',
-      title: 'Image',
+      title: 'Bilde',
       type: 'image',
       options: {
         hotspot: true

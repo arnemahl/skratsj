@@ -90,7 +90,7 @@ export default {
   preview: {
     select: {
       title: 'title',
-      media: 'mainImage',
+      media: 'logo',
       subTitle: 'company.name',
     },
   }
