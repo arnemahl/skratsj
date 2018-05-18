@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Table, Nowrap, SmallBr } from 'components/Table';
 import TechTag from 'components/TechTag';
 
@@ -36,29 +36,28 @@ export default class Project extends React.Component {
           }
 
           { (project.role && project.role.title && project.role.description) &&
-            <Fragment>
-              <tr>
-                <td>
-                  Rolle
-                </td>
-                <td>
-                  {project.role.title}
-                  <SmallBr />
-                  <div dangerouslySetInnerHTML={{__html: project.role.description.split('\n').join('<br />')}} />
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  Teknologier
-                </td>
-                <td>
-                  {project.role.technologies.map(tech =>
-                    <TechTag key={tech}>{tech}</TechTag>
-                  )}
-                </td>
-              </tr>
-            </Fragment>
+            <tr>
+              <td>
+                Rolle
+              </td>
+              <td>
+                {project.role.title}
+                <SmallBr />
+                <div dangerouslySetInnerHTML={{__html: project.role.description.split('\n').join('<br />')}} />
+              </td>
+            </tr>
+          }
+          { (project.role && project.role.technologies && project.role.technologies.length !== 0) &&
+            <tr>
+              <td>
+                Teknologier
+              </td>
+              <td>
+                {project.role.technologies.map(tech =>
+                  <TechTag key={tech}>{tech}</TechTag>
+                )}
+              </td>
+            </tr>
           }
         </tbody>
       </Table>
