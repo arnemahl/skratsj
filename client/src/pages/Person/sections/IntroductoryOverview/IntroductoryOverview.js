@@ -22,7 +22,7 @@ export default class IntroductoryOverview extends React.Component {
         <Section>
           <FlexCol>
             <ProfileImg src={createUrl(person.image).width(180).height(180)} alt="Person" sizePx="180" />
-            <Button solid className="print-button" onClick={window.print}>Print / Lag PDF</Button>
+            <Button className="print-button" onClick={window.print}>Print / Lag PDF</Button>
           </FlexCol>
           <Description>
             <Name>{person.name}</Name>
