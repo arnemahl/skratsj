@@ -20,6 +20,7 @@ const TechTag = styled.span`
   `}
 
   @media print {
+    background-color: unset;
     color: var(--black);
     border: 1px solid var(--black);
     padding: 2px 9px;

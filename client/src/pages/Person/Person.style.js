@@ -11,6 +11,9 @@ const Background = styled.div`
   @media (min-width: 1000px) {
     padding: 33px 100px;
   }
+  @media print {
+    background-color: unset;
+  }
 `;
 
 const Paper = styled.div`
@@ -22,6 +25,10 @@ const Paper = styled.div`
   padding-bottom: 25px;
   background-color: var(--white);
   color: var(--black);
+
+  @media print {
+    background-color: unset;
+  }
 `;
 
 export const Page = (props) => (

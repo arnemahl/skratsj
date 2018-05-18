@@ -46,6 +46,7 @@ export const Description = styled.div`
   padding: 20px;
 
   @media print {
+    background-color: unset;
     color: var(--black);
     padding-right: 0;
   }
