@@ -4,6 +4,10 @@ import styled from 'styled-components';
 const A = styled.a`
   color: var(--main-color-light);
   text-decoration: none;
+
+  @media print {
+    display: none;
+  }
 `;
 
 const iconMap = {

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Table, Nowrap, SmallBr } from 'components/Table';
 import TechTag from 'components/TechTag';
-import { LinkWIcon } from 'components/Link';
+import { LinkWIcon, PrintLink } from 'components/Link';
 
 import { format, nbLocale } from 'date-fns';
 const fmt = date => format(date, 'MM[.]YYYY', { locale: nbLocale });
@@ -35,7 +35,11 @@ export default class Project extends React.Component {
                   </Fragment>
                 }
               </h4>
-              {project.company && <h5>for {project.company.name}</h5>}
+              {project.readableUrl &&
+                <div>
+                  <PrintLink icon="link">{project.readableUrl}</PrintLink>
+                </div>
+              }
             </td>
           </tr>
 
