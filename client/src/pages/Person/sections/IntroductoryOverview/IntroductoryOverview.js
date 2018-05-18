@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
+import Button from 'components/Button';
 import {
   Section,
+  FlexCol,
   ProfileImg,
   Description,
   Name,
@@ -18,7 +20,10 @@ export default class IntroductoryOverview extends React.Component {
     return (
       <Fragment>
         <Section>
-          <ProfileImg src={createUrl(person.image).width(180).height(180)} alt="Person" sizePx="180" />
+          <FlexCol>
+            <ProfileImg src={createUrl(person.image).width(180).height(180)} alt="Person" sizePx="180" />
+            <Button solid className="print-button" onClick={window.print}>Print / Lag PDF</Button>
+          </FlexCol>
           <Description>
             <Name>{person.name}</Name>
             <Title>{person.title}</Title>

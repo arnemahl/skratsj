@@ -18,6 +18,27 @@ export const Section = styled.div`
   }
 `;
 
+export const FlexCol = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    margin-right: 2rem;
+    margin-left: 3rem;
+  }
+  @media print {
+    margin-right: 2rem;
+    margin-left: 0;
+  }
+
+  .print-button {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+`;
+
 export const ProfileImg = styled.img`
   border-radius: 50%;
   min-width: ${p => p.sizePx/10}rem;
@@ -30,13 +51,11 @@ export const ProfileImg = styled.img`
     margin: 3.3rem 1.5rem 1rem;
   }
   @media (min-width: 768px) {
-    margin: 2rem;
-    margin-left: 3rem;
+    margin: 2rem 0;
   }
   @media print {
+    margin: 2rem 0;
     border: none;
-    margin: 2rem;
-    margin-left: 0;
   }
 `;
 
