@@ -13,8 +13,6 @@ export default class Project extends React.Component {
     const start = fmt(project.start);
     const end = project.end ? fmt(project.end) : 'nå';
 
-    console.debug(project.title, project); // DEBUG
-
     return (
       <Table>
         <tbody>
