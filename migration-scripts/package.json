@@ -1,0 +1,9 @@
+{
+  "name": "Migration scripts",
+  "description": "For programatically migrating data",
+  "private": true,
+  "main": "package.json",
+  "dependencies": {
+    "@sanity/client": "^0.128.3"
+  }
+}
