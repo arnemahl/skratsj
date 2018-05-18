@@ -35,12 +35,15 @@ function apiCall() {
       },
       experience[]->{
         _id,
+        _type,
         title,
         slug,
         company->{
           name
         },
+        readableUrl,
         url,
+        githubUrl,
         logo,
         start,
         end,
@@ -48,8 +51,8 @@ function apiCall() {
         role {
           title,
           description,
-          technologies,
-        }
+        },
+        technologies,
       },
       education[]->{
         _id,
