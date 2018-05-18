@@ -106,7 +106,10 @@ export default {
       type: 'array',
       of: [{
         type: 'reference',
-        to: {type: 'project'},
+        to: [
+          {type: 'professionalProject'},
+          {type: 'personalProject'},
+        ],
       }],
     },
     {
