@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Section = styled.div`
-  padding: 25px;
+  padding: 2.5rem;
   padding-bottom: 0;
 
   a {
@@ -21,7 +21,7 @@ export const Section = styled.div`
 `;
 
 export const Entry = styled.div`
-  padding: 7px;
+  padding: .7rem;
   padding-left: 0;
   min-width: 50%;
   box-sizing: border-box;
@@ -31,7 +31,7 @@ export const Entry = styled.div`
   }
 `;
 export const Icon = styled.span`
-  width: 33px;
+  width: 3.3rem;
   text-align: center;
   color: var(--main-color);
 

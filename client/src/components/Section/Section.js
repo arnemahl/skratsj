@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Section = styled.div`
-  padding: 0 25px;
+  padding: 0 2.5rem;
 
   @media print {
     page-break-inside: avoid;
@@ -9,7 +9,7 @@ export const Section = styled.div`
 `;
 
 export const Title = styled.h3`
-  margin: 20px 5px 8px;
+  margin: 2.0rem .5rem .8rem;
   border-bottom: 1px solid var(--main-color);
   color: var(--main-color);
   text-transform: uppercase;
@@ -22,6 +22,6 @@ export const Title = styled.h3`
 `;
 
 export const Content = styled.div`
-  padding-top: 5px;
-  padding-left: 4px;
+  padding-top: .5rem;
+  padding-left: .4rem;
 `;

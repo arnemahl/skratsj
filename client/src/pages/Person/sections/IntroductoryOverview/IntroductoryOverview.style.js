@@ -10,7 +10,7 @@ export const Section = styled.div`
     background-color: var(--main-color);
   }
   @media (min-width: 768px) {
-    padding-top: 25px;
+    padding-top: 2.5rem;
   }
   @media print {
     flex-direction: row;
@@ -20,22 +20,22 @@ export const Section = styled.div`
 
 export const ProfileImg = styled.img`
   border-radius: 50%;
-  min-width: ${p => p.size}px;
-  max-width: ${p => p.size}px;
-  min-height: ${p => p.size}px;
-  max-height: ${p => p.size}px;
+  min-width: ${p => p.sizePx/10}rem;
+  max-width: ${p => p.sizePx/10}rem;
+  min-height: ${p => p.sizePx/10}rem;
+  max-height: ${p => p.sizePx/10}rem;
 
   @media (max-width: 767px) {
-    border: 3px solid var(--white);
-    margin: 33px 15px 10px;
+    border: .3rem solid var(--white);
+    margin: 3.3rem 1.5rem 1rem;
   }
   @media (min-width: 768px) {
-    margin: 20px;
-    margin-left: 30px;
+    margin: 2rem;
+    margin-left: 3rem;
   }
   @media print {
     border: none;
-    margin: 20px;
+    margin: 2rem;
     margin-left: 0;
   }
 `;
@@ -43,7 +43,7 @@ export const ProfileImg = styled.img`
 export const Description = styled.div`
   background-color: var(--main-color);
   color: var(--white);
-  padding: 20px;
+  padding: 2rem;
 
   @media print {
     background-color: unset;
@@ -55,14 +55,14 @@ export const Description = styled.div`
 export const Name = styled.h1`
   margin: 0;
   font-weight: 300;
-  letter-spacing: 0.5px;
+  letter-spacing: .05rem;
 `;
 
 export const Title = styled.h2`
-  margin: 3px 0 20px;
-  border-bottom: 1px solid var(--white);
+  margin: .3rem 0 2rem;
+  border-bottom: .1rem solid var(--white);
   font-weight: 300;
-  letter-spacing: 0.5px;
+  letter-spacing: .05rem;
 
   @media print {
     border-bottom: 1px solid var(--black);

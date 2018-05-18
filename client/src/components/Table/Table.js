@@ -18,24 +18,24 @@ export const Table = styled.table`
       display: block;
     }
     tr {
-      padding: 10px 0;
+      padding: 1rem 0;
     }
     td:nth-child(1) {
-      margin-bottom: 7px;
+      margin-bottom: .7rem;
     }
     @media NOT print {
       tr:nth-child(1) {
         td:nth-child(1) {
           border: 1px solid var(--main-color);
           display: inline-block;
-          padding: 3px 5px 1px;
-          border-radius: 3px;
+          padding: .3rem .5rem .1rem;
+          border-radius: .3rem;
           font-style: italic;
         }
       }
     }
 
-    padding-top: 10px;
+    padding-top: 1rem;
     &:nth-child(1) {
       padding-top: 0;
     }
@@ -43,14 +43,14 @@ export const Table = styled.table`
 
   @media (min-width: ${big}px) {
     td {
-      padding: 10px 0;
+      padding: 1rem 0;
       vertical-align: top;
     }
     td:nth-child(1) {
-      width: 180px;
+      width: 18rem;
 
       text-align: right;
-      padding-right: 20px;
+      padding-right: 2rem;
     }
   }
 
@@ -67,13 +67,13 @@ export const Table = styled.table`
     }
     td {
       display: table-cell;
-      padding: 8px 0;
+      padding: .8rem 0;
     }
     td:nth-child(1) {
-      padding: 8px 0;
+      padding: .8rem 0;
     }
 
-    padding-top: 8px;
+    padding-top: .8rem;
     &:nth-child(1) {
       padding-top: 0;
     }
@@ -82,10 +82,10 @@ export const Table = styled.table`
       vertical-align: top;
     }
     td:nth-child(1) {
-      width: 160px;
+      width: 16rem;
 
       text-align: right;
-      padding-right: 16px;
+      padding-right: 1.6rem;
     }
   }
 `;
@@ -95,5 +95,5 @@ export const Nowrap = styled.span`
 `;
 
 export const SmallBr = styled.div`
-  height: 10px;
+  height: 1rem;
 `;

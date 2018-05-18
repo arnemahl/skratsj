@@ -3,27 +3,27 @@ import styled from 'styled-components';
 const TechTag = styled.span`
   display: inline-block;
 
-  margin: 0 8px 10px 0;
-  line-height: 20px;
+  margin: 0 .8rem 1rem 0;
+  line-height: 2rem;
 
-  font-size: 14px;
-  border-radius: 4px;
+  font-size: 1.4rem;
+  border-radius: .4rem;
 
   ${p => p.solid ? `
   color: var(--white);
   background-color: var(--main-color);
-  padding: 3px 10px;
+  padding: .3rem 1rem;
   ` : `
   color: var(--main-color);
-  border: 1px solid var(--main-color);
-  padding: 2px 9px;
+  border: .1rem solid var(--main-color);
+  padding: .2rem .9rem;
   `}
 
   @media print {
     background-color: unset;
     color: var(--black);
-    border: 1px solid var(--black);
-    padding: 2px 9px;
+    border: .1rem solid var(--black);
+    padding: .2rem .9rem;
   }
 `;
 

@@ -9,7 +9,7 @@ const Background = styled.div`
   --black: #1e1e1e;
 
   @media (min-width: 1000px) {
-    padding: 33px 100px;
+    padding: 3.3rem 10rem;
   }
   @media print {
     background-color: unset;
@@ -18,11 +18,11 @@ const Background = styled.div`
 
 const Paper = styled.div`
   @media (min-width: 1000px) {
-    max-width: 800px;
+    max-width: 80rem;
   }
 
   margin: auto;
-  padding-bottom: 25px;
+  padding-bottom: 2.5rem;
   background-color: var(--white);
   color: var(--black);
 
