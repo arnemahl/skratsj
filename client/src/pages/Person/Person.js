@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import IntroductoryOverview from './sections/IntroductoryOverview';
 import KeyInformation from './sections/KeyInformation';
 import Expertise from './sections/Expertise';
-import ProjectList from './sections/ProjectList';
+import Experience from './sections/Experience';
 import Education from './sections/Education';
 import VolunteerWork from './sections/VolunteerWork';
 
@@ -49,7 +49,7 @@ class Person extends Component {
             <KeyInformation person={person} />
             <Expertise person={person} />
             <Education person={person} />
-            <ProjectList person={person} />
+            <Experience person={person} />
             <VolunteerWork person={person} />
           </Page>
         );

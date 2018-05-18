@@ -3,7 +3,7 @@ import React from 'react';
 import { Section, Title } from 'components/Section';
 import Project from './Project';
 
-export default class ProjectList extends React.Component {
+export default class Experience extends React.Component {
 
   render() {
     const { experience: projects } = this.props.person;
