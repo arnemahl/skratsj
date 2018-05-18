@@ -13,3 +13,9 @@ h2 {
 h3 {
   font-size: 1.872rem;
 }
+
+@media print {
+  html {
+    font-size: 8px;
+  }
+}
