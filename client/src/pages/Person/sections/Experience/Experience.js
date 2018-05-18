@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Section, Title } from 'components/Section';
+import { Section, Title, NoPageBreak } from 'components/Section';
 import Project from './Project';
 
 export default class Experience extends React.Component {
@@ -9,9 +9,17 @@ export default class Experience extends React.Component {
     const { experience: projects } = this.props.person;
 
     return (
-      <Section>
-        <Title>Erfaring</Title>
-        {projects.map(project =>
+      <Section allowPageBreak>
+        <NoPageBreak>
+          <Title>Erfaring</Title>
+          {projects.slice(0, 1).map(project =>
+            <Project
+              key={project._id}
+              project={project}
+            />
+          )}
+        </NoPageBreak>
+        {projects.slice(1).map(project =>
           <Project
             key={project._id}
             project={project}

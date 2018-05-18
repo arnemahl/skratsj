@@ -4,7 +4,10 @@ export const Section = styled.div`
   padding: 0 2.5rem;
 
   @media print {
-    page-break-inside: avoid;
+    ${p => p.allowPageBreak
+      ? ''
+      : 'page-break-inside: avoid;'
+    }
   }
 `;
 
@@ -24,4 +27,10 @@ export const Title = styled.h3`
 export const Content = styled.div`
   padding-top: .5rem;
   padding-left: .4rem;
+`;
+
+export const NoPageBreak = styled.div`
+  @media print {
+    page-break-inside: avoid;
+  }
 `;
