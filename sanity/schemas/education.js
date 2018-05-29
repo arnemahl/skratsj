@@ -40,7 +40,7 @@ export default {
     prepare({ inst, deg, start, end }) {
       return {
         title: `${inst}, ${deg}`,
-        description: `${start} - ${end}`,
+        subtitle: `${start} - ${end}`,
       };
     },
   }
