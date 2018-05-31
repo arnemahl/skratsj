@@ -101,15 +101,30 @@ export default {
       }],
     },
     {
-      name: 'experience',
-      title: 'Erfaring',
+      name: 'jobs',
+      title: 'Jobber',
       type: 'array',
       of: [{
         type: 'reference',
-        to: [
-          {type: 'professionalProject'},
-          {type: 'personalProject'},
-        ],
+        to: [{type: 'job'}],
+      }],
+    },
+    {
+      name: 'professionalProjects',
+      title: 'Jobbprosjekter',
+      type: 'array',
+      of: [{
+        type: 'reference',
+        to: [{type: 'professionalProject'}],
+      }],
+    },
+    {
+      name: 'personalProjects',
+      title: 'Personlige prosjekter',
+      type: 'array',
+      of: [{
+        type: 'reference',
+        to: [{type: 'personalProject'}],
       }],
     },
     {

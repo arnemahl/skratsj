@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Table, Nowrap, SmallBr } from 'components/Table';
 import TechTag from 'components/TechTag';
+import { LinkWIcon, PrintLink } from 'components/Link';
 
 import { format, nbLocale } from 'date-fns';
 const fmt = date => format(date, 'MM[.]YYYY', { locale: nbLocale });
 
-export default class Project extends React.Component {
+export default class PersonalProject extends React.Component {
   render() {
     const { project } = this.props;
 
@@ -21,8 +22,24 @@ export default class Project extends React.Component {
               : <td><Nowrap>{start}</Nowrap> - <Nowrap>{end}</Nowrap></td>
             }
             <td>
-              <h4>{project.title}</h4>
-              {project.company && <h5>for {project.company.name}</h5>}
+              <h4>
+                {project.title}
+                {project.url &&
+                  <Fragment>
+                    &nbsp;<LinkWIcon icon="link" url={project.url} />
+                  </Fragment>
+                }
+                {project.githubUrl &&
+                  <Fragment>
+                    &nbsp;<LinkWIcon icon="github" url={project.githubUrl} />
+                  </Fragment>
+                }
+              </h4>
+              {project.readableUrl &&
+                <div>
+                  <PrintLink icon="link">{project.readableUrl}</PrintLink>
+                </div>
+              }
             </td>
           </tr>
 

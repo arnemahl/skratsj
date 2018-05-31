@@ -70,7 +70,7 @@ export default {
     },
     {
       name: 'readableUrl',
-      title: 'URL',
+      title: 'Lesbar URL',
       type: 'string',
     },
     {

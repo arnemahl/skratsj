@@ -1,26 +1,26 @@
 import React from 'react';
 
 import { Section, Title, NoPageBreak } from 'components/Section';
-import Project from './Project';
+import PersonalProject from './PersonalProject';
 
-export default class Experience extends React.Component {
+export default class PersonalProjects extends React.Component {
 
   render() {
-    const { experience: projects } = this.props.person;
+    const { personalProjects: projects } = this.props.person;
 
     return (
       <Section allowPageBreak>
         <NoPageBreak>
-          <Title>Erfaring</Title>
+          <Title>Personlige prosjekter</Title>
           {projects.slice(0, 1).map(project =>
-            <Project
+            <PersonalProject
               key={project._id}
               project={project}
             />
           )}
         </NoPageBreak>
         {projects.slice(1).map(project =>
-          <Project
+          <PersonalProject
             key={project._id}
             project={project}
           />

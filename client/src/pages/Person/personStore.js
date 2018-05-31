@@ -33,14 +33,38 @@ function apiCall() {
         name,
         technologies,
       },
-      experience[]->{
+      jobs[]->{
         _id,
-        _type,
+        company->{
+          name,
+        },
         title,
-        slug,
+        start,
+        end,
+        description,
+      },
+      professionalProjects[]->{
+        _id,
+        title,
         company->{
           name
         },
+        readableUrl,
+        url,
+        githubUrl,
+        logo,
+        start,
+        end,
+        description,
+        role {
+          title,
+          description,
+        },
+        technologies,
+      },
+      personalProjects[]->{
+        _id,
+        title,
         readableUrl,
         url,
         githubUrl,
