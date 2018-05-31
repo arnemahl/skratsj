@@ -6,7 +6,7 @@ import Experience from './sections/Experience';
 import Education from './sections/Education';
 import VolunteerWork from './sections/VolunteerWork';
 
-import { Page } from './Person.style.js';
+import { Page, LoadingMessage, ErrorMessage } from './Person.style.js';
 
 import { personStore, fetchPerson } from './personStore';
 import REQ from 'util/REQ';
@@ -31,16 +31,16 @@ class Person extends Component {
       case REQ.INIT:
       case REQ.PENDING:
         return (
-          <Page>
+          <LoadingMessage>
             Laster...
-          </Page>
+          </LoadingMessage>
         );
       case REQ.ERROR:
         return (
-          <Page>
+          <ErrorMessage>
             Noe gikk galt.<br />
             Prøv å laste siden på nytt.
-          </Page>
+          </ErrorMessage>
         );
       case REQ.SUCCESS:
         return (
