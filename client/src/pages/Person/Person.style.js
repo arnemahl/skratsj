@@ -25,7 +25,7 @@ const Paper = styled.div`
   }
 
   margin: auto;
-  padding-bottom: 5rem 2.5rem;
+  padding-bottom: 2.5rem;
   background-color: var(--white);
   color: var(--black);
 
