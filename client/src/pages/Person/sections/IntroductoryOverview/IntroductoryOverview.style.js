@@ -46,6 +46,8 @@ export const ProfileImg = styled.img`
   min-height: ${p => p.sizePx/10}rem;
   max-height: ${p => p.sizePx/10}rem;
 
+  filter: grayscale(0.5);
+
   @media (max-width: 767px) {
     border: .3rem solid var(--white);
     margin: 3.3rem 1.5rem 1rem;
