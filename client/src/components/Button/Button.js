@@ -8,6 +8,7 @@ export default styled.button`
     background: var(--main-color);
     color: var(--white);
   ` : `
+    background: var(--white);
     color: var(--main-color);
   `}
   border: 1px solid var(--main-color);
