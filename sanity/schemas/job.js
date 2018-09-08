@@ -4,18 +4,18 @@
 
 export default {
   name: 'job',
-  title: 'Jobb',
+  title: 'Job',
   type: 'document',
   fields: [
     {
       name: 'company',
-      title: 'Selskap',
+      title: 'Company',
       type: 'reference',
       to: [{type: 'company'}],
     },
     {
       name: 'title',
-      title: 'Jobbtittel',
+      title: 'Job title',
       type: 'localeString',
     },
     {
@@ -25,12 +25,12 @@ export default {
     },
     {
       name: 'end',
-      title: 'Slutt',
+      title: 'End',
       type: 'date',
     },
     {
       name: 'description',
-      title: 'Kort beskrivelse',
+      title: 'Description',
       type: 'localeText',
     },
   ],

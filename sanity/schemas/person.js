@@ -5,12 +5,12 @@ export default {
   fields: [
     {
       name: 'name',
-      title: 'Navn',
+      title: 'Name',
       type: 'string',
     },
     {
       name: 'image',
-      title: 'Bilde',
+      title: 'Image',
       type: 'image',
       options: {
         hotspot: true
@@ -18,79 +18,78 @@ export default {
     },
     {
       name: 'title',
-      title: 'Yrkestittel',
-      description: 'Yrkestittel og evt. spesialisering, evt. innen et felt',
+      title: 'Title',
+      description: 'Job title/profession',
       type: 'localeString',
     },
     {
       name: 'introduction',
-      title: 'Introduksjon',
+      title: 'Introduction',
       type: 'localeText',
     },
     {
       name: 'keyInfo',
-      title: 'Nøkkelinfo',
+      title: 'Key info',
       type: 'object',
       fields: [
         {
           name: 'location',
-          title: 'Bosted',
+          title: 'Location',
           description: 'F.eks. Oslo. Ikke full adresse.',
           type: 'localeString',
         },
         {
           name: 'birthYear',
-          title: 'Fødselsår',
+          title: 'Bith year',
           type: 'string',
         },
         {
           name: 'emailAddress',
-          title: 'E-post',
+          title: 'Email address',
           type: 'string',
         },
         {
           name: 'phoneNumber',
-          title: 'Telefonnummer',
+          title: 'Phone number',
           type: 'string',
         },
         {
           name: 'websiteUrl',
-          title: 'Nettside',
-          description: 'F.eks. hjemmeside eller blogg',
+          title: 'Website',
           type: 'url',
         },
         {
           name: 'linkedInUrl',
           title: 'LinkedIn',
-          description: 'URL til LinkedIn-profil',
+          description: 'URL to your LinkedIn profile',
           type: 'url',
         },
         {
           name: 'twitterHandle',
-          title: 'Twitter',
-          description: 'F.eks. @realDonaldTrump',
+          title: 'Twitter handle',
+          description: 'For example @arnemahl',
           type: 'string',
         },
       ],
     },
     {
       name: 'expertise',
-      title: 'Ekspertise',
+      title: 'Expertise',
       type: 'array',
       of: [{
         name: 'area',
-        title: 'Område',
+        title: 'Area',
         type: 'object',
         fields: [
           {
             name: 'name',
-            title: 'Navn på område',
-            description: 'F.eks. frontend',
+            title: 'Name of area',
+            description: 'E.g. frontend',
             type: 'string',
           },
           {
             name: 'technologies',
-            title: 'Teknologier',
+            title: 'Technologies',
             type: 'array',
             of: [{type: 'string'}],
             options: {
@@ -102,7 +101,7 @@ export default {
     },
     {
       name: 'jobs',
-      title: 'Jobber',
+      title: 'Jobs',
       type: 'array',
       of: [{
         type: 'reference',
@@ -111,7 +110,7 @@ export default {
     },
     {
       name: 'professionalProjects',
-      title: 'Jobbprosjekter',
+      title: 'Professional projects',
       type: 'array',
       of: [{
         type: 'reference',
@@ -120,7 +119,7 @@ export default {
     },
     {
       name: 'personalProjects',
-      title: 'Personlige prosjekter',
+      title: 'Personal prosjekter',
       type: 'array',
       of: [{
         type: 'reference',
@@ -129,7 +128,7 @@ export default {
     },
     {
       name: 'education',
-      title: 'Utdanning',
+      title: 'Education',
       type: 'array',
       of: [{
         type: 'reference',
@@ -138,7 +137,7 @@ export default {
     },
     {
       name: 'volunteerWorkPositions',
-      title: 'Frivillige verv',
+      title: 'Volunteer work positions',
       type: 'array',
       of: [{
         type: 'reference',

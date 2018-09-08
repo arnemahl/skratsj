@@ -1,16 +1,16 @@
 export default {
   name: 'personalProject',
-  title: 'Prosjekt, personlig',
+  title: 'Project, personal',
   type: 'document',
   fields: [
     {
       name: 'title',
-      title: 'Tittel',
+      title: 'Title',
       type: 'localeString',
     },
     {
       name: 'readableUrl',
-      title: 'Lesbar URL',
+      title: 'Readable URL',
       description: 'Kan vises i print-versjon',
       type: 'string',
     },
@@ -21,7 +21,7 @@ export default {
     },
     {
       name: 'githubUrl',
-      title: 'GitHub-URL',
+      title: 'GitHub URL',
       type: 'url',
     },
     {
@@ -31,18 +31,17 @@ export default {
     },
     {
       name: 'end',
-      title: 'Slutt',
+      title: 'End',
       type: 'date',
     },
     {
       name: 'description',
-      title: 'Beskrivelse',
-      subTitle: 'Hva gikk prosjektet ut på?',
+      title: 'Description',
       type: 'localeText',
     },
     {
       name: 'technologies',
-      title: 'Teknologier',
+      title: 'Technologies',
       type: 'array',
       of: [{type: 'string'}],
       options: {
@@ -51,18 +50,17 @@ export default {
     },
     {
       name: 'role',
-      title: 'Rolle',
+      title: 'Role',
       type: 'object',
       fields: [
         {
           name: 'title',
-          title: 'Tittel',
+          title: 'Title',
           type: 'localeString',
         },
         {
           name: 'description',
-          title: 'Beskrivelse',
-          subTitle: 'Hva gjorde du?',
+          title: 'Description',
           type: 'localeText',
         },
       ],

@@ -1,21 +1,21 @@
 export default {
   name: 'education',
-  title: 'Utdannelse',
+  title: 'Education',
   type: 'document',
   fields: [
     {
       name: 'institutionName',
-      title: 'Institusjon',
+      title: 'Institution',
       type: 'localeString',
     },
     {
       name: 'degree',
-      title: 'Oppnådd grad',
+      title: 'Degree',
       type: 'localeString',
     },
     {
       name: 'description',
-      title: 'Beskrivelse',
+      title: 'Description',
       type: 'localeText',
     },
     {
@@ -25,7 +25,7 @@ export default {
     },
     {
       name: 'end',
-      title: 'Slutt',
+      title: 'End',
       type: 'date',
     },
   ],

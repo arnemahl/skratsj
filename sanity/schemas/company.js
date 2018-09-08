@@ -1,11 +1,11 @@
 export default {
   name: 'company',
-  title: 'Selskap',
+  title: 'Company',
   type: 'document',
   fields: [
     {
       name: 'name',
-      title: 'Navn',
+      title: 'Name',
       type: 'string',
     },
   ],

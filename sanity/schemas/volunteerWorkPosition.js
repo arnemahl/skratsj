@@ -1,21 +1,21 @@
 export default {
   name: 'volunteerWorkPosition',
-  title: 'Frivillige verv',
+  title: 'Volunteer work position',
   type: 'document',
   fields: [
     {
       name: 'organizationName',
-      title: 'Organisasjon',
+      title: 'Organization',
       type: 'string',
     },
     {
       name: 'title',
-      title: 'Tittel',
+      title: 'Title',
       type: 'localeString',
     },
     {
       name: 'description',
-      title: 'Beskrivelse',
+      title: 'Description',
       type: 'localeText',
     },
     {
@@ -25,7 +25,7 @@ export default {
     },
     {
       name: 'end',
-      title: 'Slutt',
+      title: 'End',
       type: 'date',
     },
   ],
