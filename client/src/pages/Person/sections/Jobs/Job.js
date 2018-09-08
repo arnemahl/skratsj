@@ -1,6 +1,7 @@
 import React from 'react';
 import { Table, Nowrap } from 'components/Table';
 
+import { preferredLanguage } from 'util/localize';
 import { format, nbLocale } from 'date-fns';
 const fmt = date => format(date, 'MM[.]YYYY', { locale: nbLocale });
 
@@ -28,7 +29,10 @@ export default class Job extends React.Component {
           { job.description &&
             <tr>
               <td>
-                Beskrivelse
+                {{
+                  english: 'Description',
+                  norwegian: 'Beskrivelse',
+                }[preferredLanguage]}
               </td>
               <td>
                 {job.description}

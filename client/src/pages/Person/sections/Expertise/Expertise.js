@@ -2,6 +2,8 @@ import React from 'react';
 import { Section, Title, Content } from 'components/Section';
 import TechTag from 'components/TechTag';
 
+import { preferredLanguage } from 'util/localize';
+
 const flatten = (arr, next) => arr.concat(next);
 const unique = (item, index, array) => index === array.indexOf(item);
 
@@ -11,7 +13,12 @@ export default class Expertise extends React.Component {
 
     return (
       <Section>
-        <Title>Ekspertise</Title>
+        <Title>
+          {{
+            english: 'Expertise',
+            norwegian: 'Ekspertise',
+          }[preferredLanguage]}
+        </Title>
         <Content>
           {expertise
             .map(area => area.technologies)

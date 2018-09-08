@@ -2,6 +2,7 @@ import React from 'react';
 import { Table, Nowrap, SmallBr } from 'components/Table';
 import TechTag from 'components/TechTag';
 
+import { preferredLanguage } from 'util/localize';
 import { format, nbLocale } from 'date-fns';
 const fmt = date => format(date, 'MM[.]YYYY', { locale: nbLocale });
 
@@ -29,7 +30,10 @@ export default class ProfessionalProject extends React.Component {
           { project.description &&
             <tr>
               <td>
-                Prosjektbeskrivelse
+                {{
+                  english: 'Project description',
+                  norwegian: 'Prosjektbeskrivelse',
+                }[preferredLanguage]}
               </td>
               <td dangerouslySetInnerHTML={{__html: project.description.split('\n').join('<br />')}} />
             </tr>
@@ -38,7 +42,10 @@ export default class ProfessionalProject extends React.Component {
           { (project.role && project.role.title && project.role.description) &&
             <tr>
               <td>
-                Rolle
+                {{
+                  english: 'Role',
+                  norwegian: 'Rolle',
+                }[preferredLanguage]}
               </td>
               <td>
                 {project.role.title}
@@ -50,7 +57,10 @@ export default class ProfessionalProject extends React.Component {
           { (project.technologies && project.technologies.length !== 0) &&
             <tr>
               <td>
-                Teknologier
+                {{
+                  english: 'Technologies',
+                  norwegian: 'Teknologier',
+                }[preferredLanguage]}
               </td>
               <td>
                 {project.technologies.map(tech =>

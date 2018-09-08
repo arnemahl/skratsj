@@ -2,6 +2,8 @@ import React from 'react';
 import { Section, Title, Content } from 'components/Section';
 import VolunteerWorkPosition from './VolunteerWorkPosition';
 
+import { preferredLanguage } from 'util/localize';
+
 export default class VolunteerWork extends React.Component {
   render() {
     const { volunteerWorkPositions } = this.props.person;
@@ -12,7 +14,12 @@ export default class VolunteerWork extends React.Component {
 
     return (
       <Section>
-        <Title>Frivillige verv</Title>
+        <Title>
+          {{
+            english: 'Volunteer work',
+            norwegian: 'Frivillige verv',
+          }[preferredLanguage]}
+        </Title>
         <Content>
           {volunteerWorkPositions.map(position =>
             <VolunteerWorkPosition

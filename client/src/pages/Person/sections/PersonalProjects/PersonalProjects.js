@@ -3,6 +3,8 @@ import React from 'react';
 import { Section, Title, NoPageBreak } from 'components/Section';
 import PersonalProject from './PersonalProject';
 
+import { preferredLanguage } from 'util/localize';
+
 export default class PersonalProjects extends React.Component {
 
   render() {
@@ -11,7 +13,12 @@ export default class PersonalProjects extends React.Component {
     return (
       <Section allowPageBreak>
         <NoPageBreak>
-          <Title>Personlige prosjekter</Title>
+          <Title>
+            {{
+              english: 'Personal projects',
+              norwegian: 'Personlige prosjekter',
+            }[preferredLanguage]}
+          </Title>
           {projects.slice(0, 1).map(project =>
             <PersonalProject
               key={project._id}
