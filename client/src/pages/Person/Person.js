@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LanguageSelector from './LanguageSelector';
 import IntroductoryOverview from './sections/IntroductoryOverview';
 import KeyInformation from './sections/KeyInformation';
 import Expertise from './sections/Expertise';
@@ -47,6 +48,7 @@ class Person extends Component {
       case REQ.SUCCESS:
         return (
           <Page>
+            <LanguageSelector />
             <IntroductoryOverview person={person} />
             <KeyInformation person={person} />
             <Expertise person={person} />
