@@ -13,7 +13,10 @@ const store = new  Listenable({
 
 export { store as personStore };
 
-const localized = fieldName => `"${fieldName}": coalesce(${fieldName}.en, ${fieldName}.nb)`;
+const norwegianDomain = window.location.hostname.split('.').slice(-1)[0] === 'no';
+const localized = norwegianDomain
+  ? fieldName => `"${fieldName}": coalesce(${fieldName}.nb, ${fieldName}.en)`
+  : fieldName => `"${fieldName}": ${fieldName}.en`;
 
 function apiCall() {
   return client.fetch(
