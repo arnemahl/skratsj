@@ -1,15 +1,14 @@
 import React from 'react';
 import { Table, SmallBr } from 'components/Table';
 
-import { format, nbLocale } from 'date-fns';
-const fmt = date => format(date, 'YYYY', { locale: nbLocale });
+import { startYear, endYear } from 'util/date/format';
 
 export default class VolunteerWorkPosition extends React.Component {
   render() {
     const { position } = this.props;
 
-    const start = fmt(position.start);
-    const end = position.end ? fmt(position.end) : 'nå';
+    const start = startYear(position.start);
+    const end = endYear(position.end);
 
     return (
       <Table>

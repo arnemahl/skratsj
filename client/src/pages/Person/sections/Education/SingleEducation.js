@@ -1,15 +1,14 @@
 import React from 'react';
 import { Table } from 'components/Table';
 
-import { format, nbLocale } from 'date-fns';
-const fmt = date => format(date, 'YYYY', { locale: nbLocale });
+import { startYear, endYear } from 'util/date/format';
 
 export default class SingleEducation extends React.Component {
   render() {
     const { singleEducation: edu } = this.props;
 
-    const start = fmt(edu.start);
-    const end = edu.end ? fmt(edu.end) : 'nå';
+    const start = startYear(edu.start);
+    const end = endYear(edu.start);
 
     return (
       <Table>

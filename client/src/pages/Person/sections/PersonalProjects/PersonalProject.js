@@ -4,15 +4,14 @@ import TechTag from 'components/TechTag';
 import { LinkWIcon, PrintLink } from 'components/Link';
 
 import { preferredLanguage } from 'util/localize';
-import { format, nbLocale } from 'date-fns';
-const fmt = date => format(date, 'MM[.]YYYY', { locale: nbLocale });
+import { startMonth, endMonth } from 'util/date/format';
 
 export default class PersonalProject extends React.Component {
   render() {
     const { project } = this.props;
 
-    const start = fmt(project.start);
-    const end = project.end ? fmt(project.end) : 'nå';
+    const start = startMonth(project.start);
+    const end = endMonth(project.end);
 
     return (
       <Table>

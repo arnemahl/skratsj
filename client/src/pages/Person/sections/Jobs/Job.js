@@ -2,15 +2,14 @@ import React from 'react';
 import { Table, Nowrap } from 'components/Table';
 
 import { preferredLanguage } from 'util/localize';
-import { format, nbLocale } from 'date-fns';
-const fmt = date => format(date, 'MM[.]YYYY', { locale: nbLocale });
+import { startMonth, endMonth } from 'util/date/format';
 
 export default class Job extends React.Component {
   render() {
     const { job } = this.props;
 
-    const start = fmt(job.start);
-    const end = job.end ? fmt(job.end) : 'nå';
+    const start = startMonth(job.start);
+    const end = endMonth(job.end);
 
     return (
       <Table>
