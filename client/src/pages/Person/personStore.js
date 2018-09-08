@@ -1,6 +1,7 @@
 import { Listenable } from 'pockito';
 import { client } from 'sanity';
 import REQ from 'util/REQ';
+import { preferredLanguage } from 'util/localize';
 
 const store = new  Listenable({
   initialState: {
@@ -13,10 +14,10 @@ const store = new  Listenable({
 
 export { store as personStore };
 
-const norwegianDomain = window.location.hostname.split('.').slice(-1)[0] === 'no';
-const localized = norwegianDomain
-  ? fieldName => `"${fieldName}": coalesce(${fieldName}.nb, ${fieldName}.en)`
-  : fieldName => `"${fieldName}": ${fieldName}.en`;
+const localized = {
+  english: fieldName => `"${fieldName}": ${fieldName}.en`,
+  norwegian: fieldName => `"${fieldName}": coalesce(${fieldName}.nb, ${fieldName}.en)`,
+}[preferredLanguage];
 
 function apiCall() {
   return client.fetch(

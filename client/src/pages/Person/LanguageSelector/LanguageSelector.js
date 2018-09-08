@@ -1,7 +1,6 @@
 import React from 'react';
 import * as S from './LanguageSelector.style.js';
-
-const norwegianDomain = window.location.hostname.split('.').slice(-1)[0] === 'no';
+import { norwegianDomain } from 'util/localize';
 
 export default class LanguageSelector extends React.Component {
 
