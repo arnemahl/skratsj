@@ -7,7 +7,7 @@ export default {
       name: 'title',
       title: 'Tittel',
       description: 'Slå sammen feltene over: <Verv> [preposition] <Organisasjon>',
-      type: 'string',
+      type: 'localeString',
     },
     {
       name: 'organizationName',
@@ -17,12 +17,12 @@ export default {
     {
       name: 'position',
       title: 'Verv',
-      type: 'string',
+      type: 'localeString',
     },
     {
       name: 'description',
       title: 'Beskrivelse',
-      type: 'text',
+      type: 'localeText',
     },
     {
       name: 'start',
@@ -39,7 +39,7 @@ export default {
   preview: {
     select: {
       org: 'organizationName',
-      pos: 'position',
+      pos: 'position.en',
       start: 'start',
       end: 'end',
     },

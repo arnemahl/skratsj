@@ -13,15 +13,17 @@ const store = new  Listenable({
 
 export { store as personStore };
 
+const localized = fieldName => `"${fieldName}": coalesce(${fieldName}.en, ${fieldName}.nb)`;
+
 function apiCall() {
   return client.fetch(
     `*[_type == 'person' && name == 'Arne Mæhlum'] | [0] {
       name,
       image,
-      title,
-      introduction,
+      ${localized('title')},
+      ${localized('introduction')},
       keyInfo{
-        location,
+        ${localized('location')},
         birthYear,
         emailAddress,
         phoneNumber,
@@ -38,14 +40,14 @@ function apiCall() {
         company->{
           name,
         },
-        title,
+        ${localized('title')},
         start,
         end,
-        description,
+        ${localized('description')},
       },
       professionalProjects[]->{
         _id,
-        title,
+        ${localized('title')},
         company->{
           name
         },
@@ -55,43 +57,43 @@ function apiCall() {
         logo,
         start,
         end,
-        description,
+        ${localized('description')},
         role {
-          title,
-          description,
+          ${localized('title')},
+          ${localized('description')},
         },
         technologies,
       },
       personalProjects[]->{
         _id,
-        title,
+        ${localized('title')},
         readableUrl,
         url,
         githubUrl,
         logo,
         start,
         end,
-        description,
+        ${localized('description')},
         role {
-          title,
-          description,
+          ${localized('title')},
+          ${localized('description')},
         },
         technologies,
       },
       education[]->{
         _id,
-        institutionName,
-        degree,
-        description,
+        ${localized('institutionName')},
+        ${localized('degree')},
+        ${localized('description')},
         start,
         end,
       },
       volunteerWorkPositions[]->{
         _id,
-        title,
+        ${localized('title')},
         organizationName,
-        position,
-        description,
+        ${localized('position')},
+        ${localized('description')},
         start,
         end,
       },

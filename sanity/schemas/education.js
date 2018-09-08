@@ -6,17 +6,17 @@ export default {
     {
       name: 'institutionName',
       title: 'Institusjon',
-      type: 'string',
+      type: 'localeString',
     },
     {
       name: 'degree',
       title: 'Oppnådd grad',
-      type: 'string',
+      type: 'localeString',
     },
     {
       name: 'description',
       title: 'Beskrivelse',
-      type: 'text',
+      type: 'localeText',
     },
     {
       name: 'start',
@@ -32,8 +32,8 @@ export default {
 
   preview: {
     select: {
-      inst: 'institutionName',
-      deg: 'degree',
+      inst: 'institutionName.en',
+      deg: 'degree.en',
       start: 'start',
       end: 'end',
     },

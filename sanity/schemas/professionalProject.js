@@ -6,7 +6,7 @@ export default {
     {
       name: 'title',
       title: 'Tittel',
-      type: 'string',
+      type: 'localeString',
     },
     {
       name: 'slug',
@@ -39,7 +39,7 @@ export default {
       name: 'description',
       title: 'Beskrivelse',
       subTitle: 'Hva gikk prosjektet ut på?',
-      type: 'text',
+      type: 'localeText',
     },
     {
       name: 'technologies',
@@ -58,13 +58,13 @@ export default {
         {
           name: 'title',
           title: 'Tittel',
-          type: 'string',
+          type: 'localeString',
         },
         {
           name: 'description',
           title: 'Beskrivelse',
           subTitle: 'Hva gjorde du?',
-          type: 'text',
+          type: 'localeText',
         },
       ],
     },
@@ -90,7 +90,7 @@ export default {
 
   preview: {
     select: {
-      title: 'title',
+      title: 'title.en',
       media: 'mainImage',
       subTitle: 'company.name',
     },

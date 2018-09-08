@@ -16,7 +16,7 @@ export default {
     {
       name: 'title',
       title: 'Jobbtittel',
-      type: 'string',
+      type: 'localeString',
     },
     {
       name: 'start',
@@ -31,12 +31,12 @@ export default {
     {
       name: 'description',
       title: 'Kort beskrivelse',
-      type: 'text',
+      type: 'localeText',
     },
   ],
   preview: {
     select: {
-      jobTitle: 'title',
+      jobTitle: 'title.en',
       companyName:  'company.name',
     },
     prepare: s => ({

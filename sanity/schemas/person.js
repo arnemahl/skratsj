@@ -20,12 +20,12 @@ export default {
       name: 'title',
       title: 'Yrkestittel',
       description: 'Yrkestittel og evt. spesialisering, evt. innen et felt',
-      type: 'string',
+      type: 'localeString',
     },
     {
       name: 'introduction',
       title: 'Introduksjon',
-      type: 'text',
+      type: 'localeText',
     },
     {
       name: 'keyInfo',
@@ -36,7 +36,7 @@ export default {
           name: 'location',
           title: 'Bosted',
           description: 'F.eks. Oslo. Ikke full adresse.',
-          type: 'string',
+          type: 'localeString',
         },
         {
           name: 'birthYear',
