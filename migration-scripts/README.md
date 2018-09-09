@@ -1,5 +1,7 @@
 # Migration scripts for Sanity
 
+If you need to migrate data, it's nice to keep those scripts in this directory. Remember to change the projectId in [sanity.js](./sanity.js), and add your own token as described below.
+
 ## Create a file `sanityToken.js`:
 
 ```js
