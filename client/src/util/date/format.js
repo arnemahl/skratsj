@@ -15,9 +15,9 @@ export const {
 
       return {
         startYear: fmtYear,
-        endYear: date => date ? fmtYear(date) : 'now',
+        endYear: date => date ? fmtYear(date) : 'present',
         startMonth: fmtMonth,
-        endMonth: date => date ? fmtMonth(date) : 'now',
+        endMonth: date => date ? fmtMonth(date) : 'present',
       };
     }
     case 'norwegian': {

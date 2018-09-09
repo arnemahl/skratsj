@@ -1,7 +1,3 @@
-// Company, Location — Job Title
-// MONTH 20XX - PRESENT
-// Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
-
 export default {
   name: 'job',
   title: 'Job',
