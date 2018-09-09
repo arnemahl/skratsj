@@ -9,16 +9,6 @@ export default {
       type: 'localeString',
     },
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'name',
-        maxLength: 96,
-        auto: true,
-      },
-    },
-    {
       name: 'readableUrl',
       title: 'Lesbar URL',
       description: 'Kan vises i print-versjon',
