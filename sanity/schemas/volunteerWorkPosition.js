@@ -4,19 +4,13 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'title',
-      title: 'Tittel',
-      description: 'Slå sammen feltene over: <Verv> [preposition] <Organisasjon>',
-      type: 'localeString',
-    },
-    {
       name: 'organizationName',
       title: 'Organisasjon',
       type: 'string',
     },
     {
-      name: 'position',
-      title: 'Verv',
+      name: 'title',
+      title: 'Tittel',
       type: 'localeString',
     },
     {

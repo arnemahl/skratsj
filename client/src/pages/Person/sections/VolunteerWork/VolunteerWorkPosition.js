@@ -19,7 +19,7 @@ export default class VolunteerWorkPosition extends React.Component {
               : <td>{start} - {end}</td>
             }
             <td>
-              <h4>{position.position}</h4>
+              <h4>{position.title}</h4>
               <h5>{position.organizationName}</h5>
               {position.description && <SmallBr />}
               {position.description}
