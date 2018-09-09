@@ -67,20 +67,11 @@ export default {
         },
       ],
     },
-    {
-      name: 'logo',
-      title: 'Logo',
-      type: 'image',
-      options: {
-        hotspot: true
-      },
-    },
   ],
 
   preview: {
     select: {
       title: 'title.en',
-      media: 'logo',
       subTitle: 'company.name',
     },
   }

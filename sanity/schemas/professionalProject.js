@@ -68,20 +68,11 @@ export default {
       title: 'URL',
       type: 'url',
     },
-    {
-      name: 'logo',
-      title: 'Logo',
-      type: 'image',
-      options: {
-        hotspot: true
-      },
-    },
   ],
 
   preview: {
     select: {
       title: 'title.en',
-      media: 'mainImage',
       subTitle: 'company.name',
     },
   }
