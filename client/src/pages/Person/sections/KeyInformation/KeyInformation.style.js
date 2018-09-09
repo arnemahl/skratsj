@@ -17,6 +17,9 @@ export const Section = styled.div`
   }
   @media print {
     flex-direction: row;
+    a {
+      text-decoration: none;
+    }
   }
 `;
 

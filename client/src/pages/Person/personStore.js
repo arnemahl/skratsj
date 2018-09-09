@@ -32,8 +32,10 @@ function apiCall() {
         emailAddress,
         phoneNumber,
         websiteUrl,
-        linkedInUrl,
+        githubHandle,
+        linkedInHandle,
         twitterHandle,
+        instagramHandle,
       },
       expertise[]{
         name,

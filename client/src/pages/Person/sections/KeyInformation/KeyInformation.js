@@ -35,16 +35,28 @@ export default class KeyInformation extends React.Component {
             &nbsp;<a href={info.websiteUrl}>{info.websiteUrl.replace('https://', '')}</a>
           </Entry>
         }
-        { info.linkedInUrl &&
+        { info.githubHandle &&
+          <Entry>
+            <Icon className="fab fa-github" />
+            &nbsp;<a href={`https://www.github.com/${info.githubHandle}/`}>{info.githubHandle}</a>
+          </Entry>
+        }
+        { info.linkedInHandle &&
           <Entry>
             <Icon className="fab fa-linkedin-in" />
-            &nbsp;<a href={info.linkedInUrl}>{info.linkedInUrl.replace('https://', '')}</a>
+            &nbsp;<a href={`https://www.linkedin.com/in/${info.linkedInHandle}/`}>{info.linkedInHandle}</a>
           </Entry>
         }
         { info.twitterHandle &&
           <Entry>
             <Icon className="fab fa-twitter" />
-            &nbsp;{info.twitterHandle}
+            &nbsp;<a href={`https://twitter.com/${info.twitterHandle.replace('@', '')}`}>{info.twitterHandle}</a>
+          </Entry>
+        }
+        { info.instagramHandle &&
+          <Entry>
+            <Icon className="fab fa-instagram" />
+            &nbsp;<a href={`https://www.instagram.com/${info.instagramHandle.replace('@', '')}/`}>{info.instagramHandle}</a>
           </Entry>
         }
         { info.birthYear &&
