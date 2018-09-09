@@ -1,9 +1,9 @@
-import { Listenable } from 'pockito';
+import { Listenable } from 'pockito';
 import { client } from 'sanity';
 import REQ from 'util/REQ';
 import { preferredLanguage } from 'util/localize';
 
-const store = new  Listenable({
+const store = new  Listenable({
   initialState: {
     personAsync: {
       req: REQ.INIT,
@@ -110,7 +110,7 @@ function apiCall() {
 export function fetchPerson() {
   const update = obj => store.set({ personAsync: obj });
 
-  update({ req: REQ.PENDING });
+  update({ req: REQ.PENDING });
 
   apiCall().then(
     person => {

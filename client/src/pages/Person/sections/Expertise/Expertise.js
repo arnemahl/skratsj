@@ -7,7 +7,7 @@ import { preferredLanguage } from 'util/localize';
 const flatten = (arr, next) => arr.concat(next);
 const unique = (item, index, array) => index === array.indexOf(item);
 
-export default class Expertise extends React.Component {
+export default class Expertise extends React.Component {
   render() {
     const { expertise } = this.props.person;
 

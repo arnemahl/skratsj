@@ -61,7 +61,7 @@ export const Table = styled.table`
   @media print {
     page-break-inside: avoid;
 
-    tr {
+    tr {
       display: table-row;
       padding: initial;
     }

@@ -1,1 +1,1 @@
-export { default } from './pages/Person';
+export { default } from './pages/Person';

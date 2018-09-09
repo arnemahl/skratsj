@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './LanguageSelector.style.js';
-import { norwegianDomain } from 'util/localize';
+import { norwegianDomain } from 'util/localize';
 
 export default class LanguageSelector extends React.Component {
 
