@@ -21,7 +21,7 @@ const localized = {
 
 function apiCall() {
   return client.fetch(
-    `*[_type == 'person' && name == 'Arne Mæhlum'] | [0] {
+    `*[_type == 'person'] | [0] {
       name,
       image,
       ${localized('title')},
