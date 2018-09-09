@@ -8,7 +8,11 @@ import { preferredLanguage } from 'util/localize';
 export default class Experience extends React.Component {
 
   render() {
-    const { jobs } = this.props.person;
+    const { jobs = [] } = this.props.person;
+
+    if (jobs.length === 0) {
+      return false;
+    }
 
     return (
       <Section allowPageBreak>

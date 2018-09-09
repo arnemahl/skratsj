@@ -8,6 +8,10 @@ export default class Education extends React.Component {
   render() {
     const { education = [] } = this.props.person;
 
+    if (education.length === 0) {
+      return false;
+    }
+
     return (
       <Section>
         <Title>

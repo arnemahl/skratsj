@@ -8,7 +8,11 @@ import { preferredLanguage } from 'util/localize';
 export default class PersonalProjects extends React.Component {
 
   render() {
-    const { personalProjects: projects } = this.props.person;
+    const { personalProjects: projects = [] } = this.props.person;
+
+    if (projects.length === 0) {
+      return false;
+    }
 
     return (
       <Section allowPageBreak>
