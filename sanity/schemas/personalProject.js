@@ -70,7 +70,6 @@ export default {
   preview: {
     select: {
       title: 'title.en',
-      subTitle: 'company.name',
     },
   }
 }
