@@ -1,9 +1,3 @@
-const supportedLanguages = [
-  {id: 'en', title: 'English', isDefault: true},
-  {id: 'es', title: 'Spanish'},
-  {id: 'nb', title: 'Norwegian'}
-];
-
 export default {
   name: 'localeString',
   type: 'object',
@@ -13,7 +7,7 @@ export default {
       name: 'translations',
       options: {
         collapsible: true,
-        collapsed: false,
+        collapsed: true,
       },
     },
   ],
