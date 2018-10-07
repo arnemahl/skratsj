@@ -1,7 +1,7 @@
 {
   "name": "Migration scripts",
   "description": "For programatically migrating data",
-  "private": true,
+  "license": "MIT",
   "main": "package.json",
   "dependencies": {
     "@sanity/client": "^0.134.2"

@@ -1,7 +1,8 @@
 {
-  "name": "skratsj",
+  "name": "skratsj-client",
   "version": "0.1.0",
-  "private": true,
+  "description": "Frontend for Skratsj CV",
+  "license": "MIT",
   "dependencies": {
     "@sanity/client": "^0.134.2",
     "@sanity/image-url": "^0.134.1",
