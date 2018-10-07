@@ -38,7 +38,7 @@ If you want, you can add some sample content to your content studio.
 While develping, you might want to make changes to the [schemas](./schemas). Then it's handy to run the content studio locally, which will hot reload whenever you do.
 
 1. `$ npm start`
-2. Browse the content studio at [localhost:3333](https://localhost:3333).
+2. Browse the content studio at [localhost:3333](http://localhost:3333).
 
 * _PS: If you haven't done so already, first [install dependencies](#install-dependencies) as described above._
 
