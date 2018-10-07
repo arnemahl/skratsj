@@ -28,6 +28,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
     "styled-components": "^3.4.9"
   }
 }
