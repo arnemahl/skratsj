@@ -13,3 +13,8 @@ To create your own online CV from Skratsj (for free), here's one way to get star
 2. Run the web app in the client directory (see [client/README.md](./client/README.md)).
 3. Bootstrap a Sanity project (see [sanity/README.md](./sanity/README.md)).
 4. Host the web app online, using e.g. [Firebase Hosting](https://firebase.google.com/docs/hosting/).
+
+
+## Feedback
+
+Any feedback is much appreciated. If you have a specific issue check the [issues](https://github.com/arnemahl/skratsj/issues), or post [general feedback here](https://github.com/arnemahl/skratsj/issues/1).
