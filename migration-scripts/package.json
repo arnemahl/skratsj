@@ -4,6 +4,6 @@
   "private": true,
   "main": "package.json",
   "dependencies": {
-    "@sanity/client": "^0.128.3"
+    "@sanity/client": "^0.134.2"
   }
 }
