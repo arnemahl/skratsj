@@ -9,7 +9,8 @@ import PersonalProjects from './sections/PersonalProjects';
 import Education from './sections/Education';
 import VolunteerWork from './sections/VolunteerWork';
 
-import { Page, LoadingMessage, ErrorMessage } from './Person.style.js';
+import { Page } from './Person.style.js';
+import { LoadingMessageLocalized, ErrorMessageLocalized } from './RequestStateFeedback';
 
 import { personStore, fetchPerson } from './personStore';
 import REQ from 'util/REQ';
@@ -33,18 +34,9 @@ class Person extends Component {
     switch (req) { // eslint-disable-line default-case
       case REQ.INIT:
       case REQ.PENDING:
-        return (
-          <LoadingMessage>
-            Laster...
-          </LoadingMessage>
-        );
+        return <LoadingMessageLocalized />;
       case REQ.ERROR:
-        return (
-          <ErrorMessage>
-            Noe gikk galt.<br />
-            Prøv å laste siden på nytt.
-          </ErrorMessage>
-        );
+        return <ErrorMessageLocalized />;
       case REQ.SUCCESS:
         return (
           <Page>

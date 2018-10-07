@@ -54,6 +54,8 @@ We create a function `localized`, which is different depending on the value of `
 * If `selectedLanguage` is `"english"`, `${localized('title')}` inlines `"title": title.en` into the query.
 * If `selectedLanguage` is `"norwegian"`, `${localized('title')}` inlines `"title": coalesce(title.nb, title.en)` into the query.
 
-### III) Hard-coded titles
+### III) Hard-coded text
 
 The titles for the various sections of the CV are hard-coded inline. If you search in the [client/src/](./client/src/) directory for `}[preferredLanguage]}` you will find 14 matches across 10 files, where you'll need to add support for any new languages you add.
+
+Additionally, the message rendered while loading content (and if the network call fails), is localized in [RequestStateFeedback.js](./client/src/pages/Person/RequestStateFeedback.js). (Here theyre wrapped in components to allow HTML like linebreaks and links in the text.)

@@ -68,6 +68,10 @@ const FeedbackText = styled.div`
     animation-iteration-count: infinite;
     animation-direction: alternate;
   ` : ''}
+
+  a {
+    color: var(--main-color);
+  }
 `;
 
 export const LoadingMessage = (props) => (
