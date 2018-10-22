@@ -8,7 +8,7 @@ export default class SingleEducation extends React.Component {
     const { singleEducation: edu } = this.props;
 
     const start = startYear(edu.start);
-    const end = endYear(edu.start);
+    const end = endYear(edu.end);
 
     return (
       <Table>
