@@ -23,7 +23,7 @@ The content studio is where you edit the content stored in your CMS.
 ### Install dependencies
 
 1. Install Sanity CLI globally: `$ npm install -g @sanity/cli`
-2. Install dependencies in this directory: `$ npm install`
+2. Install dependencies in this directory: `$ yarn`
 
 ### Add sample content
 
@@ -37,7 +37,7 @@ If you want, you can add some sample content to your content studio.
 
 While develping, you might want to make changes to the [schemas](./schemas). Then it's handy to run the content studio locally, which will hot reload whenever you do.
 
-1. `$ npm start`
+1. `$ yarn start`
 2. Browse the content studio at [localhost:3333](http://localhost:3333).
 
 * _PS: If you haven't done so already, first [install dependencies](#install-dependencies) as described above._

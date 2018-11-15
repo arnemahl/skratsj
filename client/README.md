@@ -4,10 +4,10 @@ This directory contains the code for the web app. The project is set up with [cr
 
 To get started, run the following commands in this directory:
 
-1. `$ npm install`
-2. `$ npm start`
+1. `$ yarn`
+2. `$ yarn start`
 
-`npm start` shoud automatically open [localhost:3000](http://localhost:3000) in a new browser tab, and hot reload whenever you make changes to the source code (in [src/](./src/)).
+`yarn start` shoud automatically open [localhost:3000](http://localhost:3000) in a new browser tab, and hot reload whenever you make changes to the source code (in [src/](./src/)).
 
 If you haven't gone through the setup in the [sanity](../sanity) directory yet, [localhost:3000](http://localhost:3000) should show the CV for Arne Mæhlum.
 
