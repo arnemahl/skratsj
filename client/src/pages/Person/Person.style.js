@@ -2,11 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const Background = styled.div`
-  background-color: #1d1415;
-  --main-color: #2d6558;
-  --main-color-light: #659086;
-  --white: #e5e5e5;
-  --black: #1e1e1e;
+  background-color: var(--background-color);
 
   min-height: 100vh;
 

@@ -9,6 +9,7 @@ import PersonalProjects from './sections/PersonalProjects';
 import Education from './sections/Education';
 import VolunteerWork from './sections/VolunteerWork';
 
+import './colors.css';
 import { Page } from './Person.style.js';
 import { LoadingMessageLocalized, ErrorMessageLocalized } from './RequestStateFeedback';
 
