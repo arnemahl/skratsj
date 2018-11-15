@@ -1,5 +1,5 @@
 {
-  "name": "Migration scripts",
+  "name": "migration-scripts",
   "description": "For programatically migrating data",
   "license": "MIT",
   "main": "package.json",
