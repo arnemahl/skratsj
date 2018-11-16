@@ -13,7 +13,7 @@ Here is how you can quickly create a new Sanity project, creating a CMS for your
 
 If you already started your [client](../client), just refresh [localhost:3000](http://localhost:3000) and you should now see the sample CV instead of the CV for Arne Mæhlum.
 
-To edit the contents, you can now run the content studio [locally](#TODO), or deploy it to [production](#TODO).
+To edit the contents, you can now run the content studio [locally](#run-locally), or deploy it to [production](#online-content-studio).
 
 
 # Content studio
@@ -29,7 +29,7 @@ The content studio is where you edit the content stored in your CMS.
 
 If you want, you can add some sample content to your content studio.
 
-1. In this directory, run `$ sanity dataset deploy sample-CV.tar.gz production`.
+1. In this directory, run `$ sanity dataset import sample-CV.tar.gz production`.
 
 * _PS: If you haven't done so already, first [install dependencies](#install-dependencies) as described above._
 
