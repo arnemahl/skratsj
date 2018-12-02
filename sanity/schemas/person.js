@@ -131,7 +131,7 @@ export default {
     },
     {
       name: 'personalProjects',
-      title: 'Personal prosjekter',
+      title: 'Personal projects',
       type: 'array',
       of: [{
         type: 'reference',
