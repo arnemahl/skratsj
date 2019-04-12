@@ -1,7 +1,11 @@
 :root {
-  --main-color: #2d6558;
-  --main-color-light: #659086;
-  --white: #e5e5e5;
-  --black: #1e1e1e;
-  --background-color: #1d1415;
+  --main-color: #9b00a7;
+  --main-color-light: #9b00a7;
+  --main-color-dark: #91009c;
+  --white: #c4fff8;
+  --black: #1e2d3e;
+
+  --colored-background: linear-gradient(33deg, var(--main-color-dark), var(--main-color-light));
+  --white-background: linear-gradient(93deg, var(--white), #5f8992);
+  --background-color: linear-gradient(256deg, #320035, #320035);
 }

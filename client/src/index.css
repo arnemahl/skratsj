@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-family: 'Audiowide', sans-serif;
 }
 
 @page {

@@ -7,7 +7,7 @@ export const Section = styled.div`
 
   @media (max-width: 767px) {
     flex-direction: column;
-    background-color: var(--main-color);
+    background: var(--colored-background);
   }
   @media (min-width: 768px) {
     padding-top: 2.5rem;
@@ -62,7 +62,7 @@ export const ProfileImg = styled.img`
 `;
 
 export const Description = styled.div`
-  background-color: var(--main-color);
+  background: var(--colored-background);
   color: var(--white);
   padding: 2rem;
 
