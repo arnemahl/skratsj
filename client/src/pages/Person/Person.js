@@ -18,6 +18,22 @@ import REQ from 'util/REQ';
 
 class Person extends Component {
 
+  state = {
+    theme: "default",
+  }
+
+  toggleTheme = () => {
+    this.setState(state => {
+      // eslint-disable-next-line default-case
+      switch (state.theme) {
+        case "default":
+          return { theme: "retro-wave" };
+        case "retro-wave":
+          return { theme: "default" };
+      }
+    })
+  }
+
   componentDidMount() {
     fetchPerson();
     personStore.addListener(this.onChange);
@@ -40,7 +56,7 @@ class Person extends Component {
         return <ErrorMessageLocalized />;
       case REQ.SUCCESS:
         return (
-          <Page theme="retro-wave">
+          <Page theme={this.state.theme} onDoubleClick={this.toggleTheme}>
             <LanguageSelector />
             <IntroductoryOverview person={person} />
             <KeyInformation person={person} />
