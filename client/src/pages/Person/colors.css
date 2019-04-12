@@ -3,9 +3,39 @@
   --main-color-light: #9b00a7;
   --main-color-dark: #91009c;
   --white: #c4fff8;
+  --light-pink: #bf82cb;
+  --dark-white: #498da0;
   --black: #1e2d3e;
 
-  --colored-background: linear-gradient(33deg, var(--main-color-dark), var(--main-color-light));
-  --white-background: linear-gradient(93deg, var(--white), #5f8992);
+  /*--white-background: linear-gradient(93deg,
+    var(--white),
+    #7abec5 59.0%,
+    #a5e4e3 59.1%,
+    #79bdc4 66%,
+    var(--dark-white)
+  );*/
+  --white-background: linear-gradient(93deg,
+    var(--white),
+    #6fb4be 59.0%,
+    #a5e4e3 59.1%,
+    #79bdc4 66%,
+    var(--dark-white)
+  );
+  --white-background: linear-gradient(93deg,
+    var(--white),
+    var(--light-pink) 59.0%,
+    #a5e4e3 59.1%,
+    #79bdc4 66%,
+    var(--dark-white)
+  );
+  --white-background: linear-gradient(93deg,
+    var(--white),
+    var(--dark-white)
+  );
+
+  --colored-background: linear-gradient(33deg,
+    var(--main-color-dark),
+    var(--main-color-light)
+  );
   --background-color: linear-gradient(256deg, #320035, #320035);
 }
