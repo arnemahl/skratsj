@@ -2,35 +2,19 @@
   --main-color: #9b00a7;
   --main-color-light: #9b00a7;
   --main-color-dark: #91009c;
-  --white: #c4fff8;
-  --light-pink: #bf82cb;
-  --dark-white: #498da0;
+  --light-blue: #498da0;
+  --lighter-blue: #c4fff8;
+  --lighter-pink: #bf82cb;
+
+  --white: var(--lighter-blue);
   --black: #1e2d3e;
 
-  /*--white-background: linear-gradient(93deg,
-    var(--white),
-    #7abec5 59.0%,
+  --white-background: linear-gradient(93deg,
+    var(--lighter-blue),
+    var(--lighter-pink) 59.0%,
     #a5e4e3 59.1%,
     #79bdc4 66%,
-    var(--dark-white)
-  );*/
-  --white-background: linear-gradient(93deg,
-    var(--white),
-    #6fb4be 59.0%,
-    #a5e4e3 59.1%,
-    #79bdc4 66%,
-    var(--dark-white)
-  );
-  --white-background: linear-gradient(93deg,
-    var(--white),
-    var(--light-pink) 59.0%,
-    #a5e4e3 59.1%,
-    #79bdc4 66%,
-    var(--dark-white)
-  );
-  --white-background: linear-gradient(93deg,
-    var(--white),
-    var(--dark-white)
+    var(--light-blue)
   );
 
   --colored-background: linear-gradient(33deg,
