@@ -7,7 +7,7 @@
   --lighter-pink: #bf82cb;
 
   --white: var(--lighter-blue);
-  --black: #1e2d3e;
+  --black: #00336f;
 
   --white-background: linear-gradient(93deg,
     var(--lighter-blue),
