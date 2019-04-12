@@ -40,7 +40,7 @@ class Person extends Component {
         return <ErrorMessageLocalized />;
       case REQ.SUCCESS:
         return (
-          <Page>
+          <Page theme="retro-wave">
             <LanguageSelector />
             <IntroductoryOverview person={person} />
             <KeyInformation person={person} />
