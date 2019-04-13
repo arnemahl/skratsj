@@ -5,7 +5,7 @@ export const colors = css`
   --pelican-pink: #fb80e6;
 
   --main-color: #9b00a7;
-  --main-color-light: #9b00a7;
+  --main-color-light: #ac49b3;
   --main-color-dark: #91009c;
 
   --main-border-color: var(--main-color);
