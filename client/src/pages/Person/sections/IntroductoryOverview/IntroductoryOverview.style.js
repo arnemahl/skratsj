@@ -50,7 +50,6 @@ export const ProfileImg = styled.img`
   filter: grayscale(0.5);
 
   @media (max-width: 767px) {
-    border: .3rem solid var(--white);
     margin: 3.3rem 1.5rem 1rem;
   }
   @media (min-width: 768px) {
@@ -58,7 +57,6 @@ export const ProfileImg = styled.img`
   }
   @media print {
     margin: 2rem 0;
-    border: none;
   }
 `;
 
