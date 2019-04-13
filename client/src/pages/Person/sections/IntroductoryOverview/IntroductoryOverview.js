@@ -22,7 +22,11 @@ export default class IntroductoryOverview extends React.Component {
       <Fragment>
         <Section>
           <FlexCol>
-            <ProfileImg src={createUrl(person.image).width(180).height(180)} alt="Person" sizePx="180" />
+            <ProfileImg
+              src={createUrl(person.image).width(180).height(180)}
+              alt="Person"
+              sizePx="180"
+            />
             <Button className="print-button" onClick={window.print}>
               {{
                 english: 'Print / Create PDF',

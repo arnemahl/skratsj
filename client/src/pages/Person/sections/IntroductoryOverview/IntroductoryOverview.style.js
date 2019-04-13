@@ -40,11 +40,12 @@ export const FlexCol = styled.div`
 `;
 
 export const ProfileImg = styled.img`
-  border-radius: 50%;
   min-width: ${p => p.sizePx/10}rem;
   max-width: ${p => p.sizePx/10}rem;
   min-height: ${p => p.sizePx/10}rem;
   max-height: ${p => p.sizePx/10}rem;
+
+  clip-path: circle(49.5%);
 
   filter: grayscale(0.5);
 
@@ -58,6 +59,11 @@ export const ProfileImg = styled.img`
   @media print {
     margin: 2rem 0;
     border: none;
+  }
+
+  @media not print {
+    clip-path: polygon(0% 100%, 100% 88%, 70% 0%, 20% 14%);
+    filter: saturate(140%) hue-rotate(64deg);
   }
 `;
 
