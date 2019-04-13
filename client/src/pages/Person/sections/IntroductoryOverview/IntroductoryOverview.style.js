@@ -60,11 +60,6 @@ export const ProfileImg = styled.img`
     margin: 2rem 0;
     border: none;
   }
-
-  @media not print {
-    clip-path: polygon(0% 100%, 100% 88%, 70% 0%, 20% 14%);
-    filter: saturate(140%) hue-rotate(64deg);
-  }
 `;
 
 export const Description = styled.div`
