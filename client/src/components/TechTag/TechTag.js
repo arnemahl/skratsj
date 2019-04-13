@@ -8,7 +8,6 @@ const TechTag = styled.span`
 
   font-size: 1.4rem;
   border-radius: .4rem;
-  border-radius: 0;
 
   ${p => p.solid ? `
   color: var(--white);
