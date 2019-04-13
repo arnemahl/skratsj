@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
 
 .theme-retro-wave {
-  font-family: var(--font-family), sans-serif;
+  font-family: Audiowide, sans-serif;
 }
 
 body {

@@ -22,7 +22,7 @@ class Person extends Component {
     theme: "default",
   }
 
-  toggleTheme = () => {
+  toggleTheme() {
     this.setState(state => {
       // eslint-disable-next-line default-case
       switch (state.theme) {
@@ -32,6 +32,27 @@ class Person extends Component {
           return { theme: "default" };
       }
     })
+  }
+
+  easterEgg = {
+    t0: 0,
+    clicks: 0,
+  }
+  countClicks = () => {
+    const { t0 } = this.easterEgg;
+
+    if (Date.now() - t0 > 1000) {
+      this.easterEgg = {
+        t0: Date.now(),
+        clicks: 1,
+      };
+    } else {
+      this.easterEgg.clicks++;
+    }
+
+    if (this.easterEgg.clicks === 3) {
+      this.toggleTheme();
+    }
   }
 
   componentDidMount() {
@@ -56,7 +77,7 @@ class Person extends Component {
         return <ErrorMessageLocalized />;
       case REQ.SUCCESS:
         return (
-          <Page theme={this.state.theme} onDoubleClick={this.toggleTheme}>
+          <Page theme={this.state.theme} onClick={this.countClicks}>
             <LanguageSelector />
             <IntroductoryOverview person={person} />
             <KeyInformation person={person} />
