@@ -67,6 +67,10 @@ export const Description = styled.div`
   color: var(--white);
   padding: 2rem;
 
+  @media (max-width: 767px) {
+    background: none;
+  }
+
   @media print {
     background-color: unset;
     color: var(--black);
