@@ -4,15 +4,25 @@
   --white: #e5e5e5;
   --black: #1e1e1e;
 
+  --main-border-color: var(--main-color);
+  --secondary-border-color: var(--main-color);
+
   --colored-background: var(--main-color);
   --white-background: var(--white);
   --background-color: #1d1415;
 }
 
 .theme-retro-wave {
+  --violet: #9632fb;
+  --pelican-pink: #fb80e6;
+
   --main-color: #9b00a7;
   --main-color-light: #9b00a7;
   --main-color-dark: #91009c;
+
+  --main-border-color: var(--main-color);
+  --secondary-border-color: var(--pelican-pink);
+
   --light-blue: #498da0;
   --lighter-blue: #c4fff8;
   --lighter-pink: #bf82cb;

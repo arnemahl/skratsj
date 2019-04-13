@@ -15,7 +15,7 @@ const TechTag = styled.span`
   padding: .3rem 1rem;
   ` : `
   color: var(--main-color);
-  border: .1rem solid var(--main-color);
+  border: .1rem solid var(--main-border-color);
   padding: .2rem .9rem;
   `}
 
