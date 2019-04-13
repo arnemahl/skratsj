@@ -5,10 +5,10 @@ export default styled.button`
   cursor: pointer;
 
   ${p => p.solid ? `
-    background: var(--main-color);
+    background: transparent;
     color: var(--white);
   ` : `
-    background: var(--white);
+    background: transparent;
     color: var(--main-color);
   `}
   border: 1px solid var(--main-color);
