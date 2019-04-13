@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Theme from 'themes/Theme';
 import LanguageSelector from './LanguageSelector';
 import IntroductoryOverview from './sections/IntroductoryOverview';
 import KeyInformation from './sections/KeyInformation';
@@ -78,6 +79,7 @@ class Person extends Component {
       case REQ.SUCCESS:
         return (
           <Page theme={this.state.theme} onClick={this.countClicks}>
+            <Theme theme={this.state.theme} />
             <LanguageSelector />
             <IntroductoryOverview person={person} />
             <KeyInformation person={person} />
