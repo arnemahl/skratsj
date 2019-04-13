@@ -35,9 +35,9 @@ const Paper = styled.div`
   }
 `;
 
-export const Page = (props) => (
-  <Background>
-    <Paper {...props} />
+export const Page = ({ theme = "default", ...otherProps }) => (
+  <Background className={`theme-${theme}`}>
+    <Paper {...otherProps} />
   </Background>
 );
 

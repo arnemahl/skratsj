@@ -18,6 +18,43 @@ import REQ from 'util/REQ';
 
 class Person extends Component {
 
+  state = {
+    theme: "default",
+  }
+
+  toggleTheme() {
+    this.setState(state => {
+      // eslint-disable-next-line default-case
+      switch (state.theme) {
+        case "default":
+          return { theme: "retro-wave" };
+        case "retro-wave":
+          return { theme: "default" };
+      }
+    })
+  }
+
+  easterEgg = {
+    t0: 0,
+    clicks: 0,
+  }
+  countClicks = () => {
+    const { t0 } = this.easterEgg;
+
+    if (Date.now() - t0 > 1000) {
+      this.easterEgg = {
+        t0: Date.now(),
+        clicks: 1,
+      };
+    } else {
+      this.easterEgg.clicks++;
+    }
+
+    if (this.easterEgg.clicks === 3) {
+      this.toggleTheme();
+    }
+  }
+
   componentDidMount() {
     fetchPerson();
     personStore.addListener(this.onChange);
@@ -40,7 +77,7 @@ class Person extends Component {
         return <ErrorMessageLocalized />;
       case REQ.SUCCESS:
         return (
-          <Page>
+          <Page theme={this.state.theme} onClick={this.countClicks}>
             <LanguageSelector />
             <IntroductoryOverview person={person} />
             <KeyInformation person={person} />
