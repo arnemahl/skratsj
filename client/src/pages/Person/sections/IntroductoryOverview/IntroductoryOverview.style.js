@@ -40,7 +40,7 @@ export const FlexCol = styled.div`
 `;
 
 export const ProfileImg = styled.img`
-  border-radius: 50%;
+  clip-path: circle(49.5%);
   min-width: ${p => p.sizePx/10}rem;
   max-width: ${p => p.sizePx/10}rem;
   min-height: ${p => p.sizePx/10}rem;
@@ -49,7 +49,6 @@ export const ProfileImg = styled.img`
   filter: grayscale(0.5);
 
   @media (max-width: 767px) {
-    border: .3rem solid var(--white);
     margin: 3.3rem 1.5rem 1rem;
   }
   @media (min-width: 768px) {
@@ -57,7 +56,6 @@ export const ProfileImg = styled.img`
   }
   @media print {
     margin: 2rem 0;
-    border: none;
   }
 `;
 
