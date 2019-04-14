@@ -26,7 +26,7 @@ export const Table = styled.table`
     @media NOT print {
       tr:nth-child(1) {
         td:nth-child(1) {
-          border: 1px solid var(--main-color);
+          border: 1px solid var(--main-border-color);
           display: inline-block;
           padding: .3rem .5rem .1rem;
           border-radius: .3rem;
