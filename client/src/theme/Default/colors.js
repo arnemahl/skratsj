@@ -1,3 +1,4 @@
+export default `
 :root {
   --main-color: #2d6558;
   --main-color-light: #659086;
@@ -8,3 +9,4 @@
   --white-background: var(--white);
   --background-color: #1d1415;
 }
+`
