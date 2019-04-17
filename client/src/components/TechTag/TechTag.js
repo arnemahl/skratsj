@@ -11,11 +11,11 @@ const TechTag = styled.span`
 
   ${p => p.solid ? `
   color: var(--white);
-  background-color: var(--main-color);
+  background: var(--colored-background);
   padding: .3rem 1rem;
   ` : `
   color: var(--main-color);
-  border: .1rem solid var(--main-color);
+  border: .1rem solid var(--main-border-color);
   padding: .2rem .9rem;
   `}
 

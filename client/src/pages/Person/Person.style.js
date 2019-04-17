@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const Background = styled.div`
-  background-color: var(--background-color);
+  background: var(--background-color);
 
   min-height: 100vh;
 
@@ -22,7 +22,7 @@ const Paper = styled.div`
 
   margin: auto;
   padding-bottom: 2.5rem;
-  background-color: var(--white);
+  background: var(--white-background);
   color: var(--black);
 
   min-height: 80vh;

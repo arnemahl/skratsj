@@ -13,7 +13,7 @@ export const Section = styled.div`
 
 export const Title = styled.h3`
   margin: 2.0rem .5rem .8rem;
-  border-bottom: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--secondary-border-color);
   color: var(--main-color);
   text-transform: uppercase;
 
