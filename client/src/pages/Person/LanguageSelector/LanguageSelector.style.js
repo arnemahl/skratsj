@@ -7,6 +7,10 @@ export const Container = styled.div`
 
   display: flex;
   align-items: center;
+
+  @media print {
+    display: none;
+  }
 `;
 
 export const A = styled.a`
