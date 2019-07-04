@@ -4,13 +4,13 @@
   "description": "Frontend for Skratsj CV",
   "license": "MIT",
   "dependencies": {
-    "@sanity/client": "0.140.11",
+    "@sanity/client": "0.141.5",
     "@sanity/image-url": "0.140.12",
     "date-fns": "1.30.1",
-    "pockito": "^0.1.15",
+    "pockito": "0.1.15",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-scripts": "2.1.8"
+    "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
